@@ -1,0 +1,3 @@
+[submodule "wordpress/wp-content/themes/roots"]
+	path = wordpress/wp-content/themes/roots
+	url = git://github.com/retlehs/roots.git
