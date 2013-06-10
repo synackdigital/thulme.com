@@ -1,0 +1,22 @@
+{
+  "name": "thulme.com",
+  "version": "0.1.0",
+  "description": "Wordpress based website at thulme.com",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt-ftp-deploy": "0.0.9",
+    "grunt": "~0.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/synackdigital/thulme.com.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Fredrik Broman",
+  "license": "The MIT License (MIT)",
+  "readmeFilename": "README.md",
+  "gitHead": "23e63ed750caedb07784ee5b5971066a212c0e62"
+}
