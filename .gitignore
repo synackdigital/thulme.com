@@ -1,4 +1,7 @@
 
+# Node modules are handled by npm
+node_modules/
+
 # Credentials for grunt-ftp-deploy
 .ftppass
 
