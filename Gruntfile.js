@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         },
         src: 'wordpress',
         dest: './',
-        exclusions: ['wordpress/**/.DS_Store', 'wordpress/**/Thumbs.db', 'wordpess/media']
+        exclusions: ['wordpress/**/.DS_Store', 'wordpress/**/Thumbs.db', 'wordpess/media', 'wordpress/wp-config.php']
       },
       prod: {
         auth: {
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         },
         src: 'wordpress',
         dest: './',
-        exclusions: ['wordpress/**/.DS_Store', 'wordpress/**/Thumbs.db', 'wordpess/media']
+        exclusions: ['wordpress/**/.DS_Store', 'wordpress/**/Thumbs.db', 'wordpess/media', 'wordpress/wp-config.php']
       },
       'themes-dev': {
         auth: {

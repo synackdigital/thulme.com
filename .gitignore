@@ -1,2 +1,6 @@
+
 # Credentials for grunt-ftp-deploy
 .ftppass
+
+# Wordpress
+wordpress/wp-config.php
