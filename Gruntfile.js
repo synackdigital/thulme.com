@@ -3,6 +3,34 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+
+    // LESS compile/compress
+    less: {
+        compile: {
+            files: {
+                "wordpress/wp-content/themes/thulme/style.css" : 'wordpress/wp-content/themes/thulme/less/style.less'
+            }
+        },
+        compress: {
+            options: {
+                yuicompress: true
+            },
+            files: {
+                "wordpress/wp-content/themes/thulme/style.css" : 'wordpress/wp-content/themes/thulme/less/style.less'
+            }
+        }
+    },
+
+    // File watcher
+    watch: {
+      files: ['wordpress/wp-content/themes/thulme/less/**/*.less'],
+      tasks: ['less:compile'],
+      options: {
+        nospawn: true
+      }
+    },
+
+    // FTP deploy
     'ftp-deploy': {
       dev: {
         auth: {
@@ -62,6 +90,8 @@ module.exports = function(grunt) {
   });
 
   // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-ftp-deploy');
 
 };
