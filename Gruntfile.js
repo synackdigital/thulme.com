@@ -12,7 +12,13 @@ module.exports = function(grunt) {
         },
         src: 'wordpress',
         dest: './',
-        exclusions: ['wordpress/**/.DS_Store', 'wordpress/**/Thumbs.db', 'wordpess/media', 'wordpress/wp-config.php']
+        exclusions: [
+          'wordpress/**/.DS_Store',
+          'wordpress/**/Thumbs.db',
+          'wordpess/media',
+          'wordpress/wp-config.php',
+          'wordpress/.htaccess'
+        ]
       },
       prod: {
         auth: {
@@ -20,7 +26,13 @@ module.exports = function(grunt) {
         },
         src: 'wordpress',
         dest: './',
-        exclusions: ['wordpress/**/.DS_Store', 'wordpress/**/Thumbs.db', 'wordpess/media', 'wordpress/wp-config.php']
+        exclusions: [
+          'wordpress/**/.DS_Store',
+          'wordpress/**/Thumbs.db',
+          'wordpess/media',
+          'wordpress/wp-config.php',
+          'wordpress/.htaccess'
+        ]
       },
       'themes-dev': {
         auth: {
@@ -30,7 +42,10 @@ module.exports = function(grunt) {
         },
         src: 'wordpress/wp-content/themes',
         dest: 'wp-content/themes',
-        exclusions: ['wordpress/wp-content/themes/**/.DS_Store', 'wordpress/wp-content/themes/**/Thumbs.db']
+        exclusions: [
+          'wordpress/wp-content/themes/**/.DS_Store',
+          'wordpress/wp-content/themes/**/Thumbs.db'
+        ]
       },
       'themes-prod': {
         auth: {
@@ -38,7 +53,10 @@ module.exports = function(grunt) {
         },
         src: 'wordpress/wp-content/themes',
         dest: 'wp-content/themes',
-        exclusions: ['wordpress/wp-content/themes/**/.DS_Store', 'wordpress/wp-content/themes/**/Thumbs.db']
+        exclusions: [
+          'wordpress/wp-content/themes/**/.DS_Store',
+          'wordpress/wp-content/themes/**/Thumbs.db'
+        ]
       }
     }
   });
