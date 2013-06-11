@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     less: {
         compile: {
             files: {
-                "wordpress/wp-content/themes/thulme/style.css" : 'wordpress/wp-content/themes/thulme/less/style.less'
+                "wordpress/wp-content/themes/thulme/style.css" : 'wordpress/wp-content/themes/thulme/assets/less/style.less'
             }
         },
         compress: {
@@ -16,14 +16,14 @@ module.exports = function(grunt) {
                 yuicompress: true
             },
             files: {
-                "wordpress/wp-content/themes/thulme/style.css" : 'wordpress/wp-content/themes/thulme/less/style.less'
+                "wordpress/wp-content/themes/thulme/style.css" : 'wordpress/wp-content/themes/thulme/assets/less/style.less'
             }
         }
     },
 
     // File watcher
     watch: {
-      files: ['wordpress/wp-content/themes/thulme/less/**/*.less'],
+      files: ['wordpress/wp-content/themes/thulme/assets/less/**/*.less'],
       tasks: ['less:compile'],
       options: {
         nospawn: true
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 
     // FTP deploy
     'ftp-deploy': {
-      dev: {
+      'dev-core': {
         auth: {
           host: 'ftpcluster.loopia.se',
           port: 21,
@@ -44,46 +44,35 @@ module.exports = function(grunt) {
           'wordpress/**/.DS_Store',
           'wordpress/**/Thumbs.db',
           'wordpess/media',
+          'wordpess/wp-content',
           'wordpress/wp-config.php',
           'wordpress/.htaccess'
         ]
       },
-      prod: {
-        auth: {
-          authKey: 'prod'
-        },
-        src: 'wordpress',
-        dest: './',
-        exclusions: [
-          'wordpress/**/.DS_Store',
-          'wordpress/**/Thumbs.db',
-          'wordpess/media',
-          'wordpress/wp-config.php',
-          'wordpress/.htaccess'
-        ]
-      },
-      'themes-dev': {
+      'dev-roots': {
         auth: {
           host: 'ftpcluster.loopia.se',
           port: 21,
           authKey: 'dev'
         },
-        src: 'wordpress/wp-content/themes',
-        dest: 'wp-content/themes',
+        src: 'wordpress/wp-content/themes/roots',
+        dest: 'wp-content/themes/roots',
         exclusions: [
-          'wordpress/wp-content/themes/**/.DS_Store',
-          'wordpress/wp-content/themes/**/Thumbs.db'
+          'wordpress/wp-content/themes/roots/**/.DS_Store',
+          'wordpress/wp-content/themes/roots/**/Thumbs.db'
         ]
       },
-      'themes-prod': {
+      'dev-thulme': {
         auth: {
-          authKey: 'prod'
+          host: 'ftpcluster.loopia.se',
+          port: 21,
+          authKey: 'dev'
         },
-        src: 'wordpress/wp-content/themes',
-        dest: 'wp-content/themes',
+        src: 'wordpress/wp-content/themes/thulme',
+        dest: 'wp-content/themes/thulme',
         exclusions: [
-          'wordpress/wp-content/themes/**/.DS_Store',
-          'wordpress/wp-content/themes/**/Thumbs.db'
+          'wordpress/wp-content/themes/thulme/**/.DS_Store',
+          'wordpress/wp-content/themes/thulme/**/Thumbs.db'
         ]
       }
     }
@@ -93,5 +82,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-ftp-deploy');
+
+  // Task aliases
+  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('deploy:dev', ['ftp-deploy:dev-core', 'deploy:dev-themes']);
+  grunt.registerTask('deploy:dev-themes', ['ftp-deploy:dev-roots', 'ftp-deploy:dev-thulme']);
 
 };
