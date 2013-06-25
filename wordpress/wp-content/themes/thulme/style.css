@@ -7955,3 +7955,12 @@ body {
     right: 20px;
   }
 }
+.hentry header {
+  margin-bottom: 17.234px;
+}
+.trail {
+  border-bottom: 1px solid #bdc3c7;
+  margin-bottom: 17.234px;
+  padding-bottom: 17.234px;
+  font-size: 23.996px;
+}
