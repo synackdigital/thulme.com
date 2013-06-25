@@ -7902,7 +7902,7 @@ a .icon-flip-vertical:before {
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  margin: 51.702000000000005px auto;
+  margin: 51.702000000000005px auto 34.468px;
   width: 302px;
   height: 50px;
   font: 0/0 a;
@@ -7911,9 +7911,8 @@ a .icon-flip-vertical:before {
   background-color: transparent;
   border: 0;
 }
-.banner .nav-main {
-  border-bottom: 2px dashed #bdc3c7;
-  padding-bottom: 17.234px;
+.banner .description {
+  margin-bottom: 34.468px;
 }
 .wrap {
   max-width: 50em;
