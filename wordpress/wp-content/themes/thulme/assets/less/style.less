@@ -16,9 +16,16 @@
 @import "mixins";
 
 .banner {
-  max-width: 342px;
-  margin-right: auto;
-  margin-left: auto;
+  background-color: @clouds;
+  border-bottom: 1px solid @silver;
+
+  padding-bottom: (@base-font-size * @base-line-height);
+
+  .container-fluid {
+    max-width: 302px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   .brand {
     background-image: url('assets/images/thulme.com-logo.png');
