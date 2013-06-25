@@ -6406,3 +6406,9 @@ input.search-query {
 .mal {
   margin-left: 20px;
 }
+.banner .brand {
+  display: block;
+  margin: 17.234px auto;
+  font-size: 39.998000000000005px;
+  text-align: center;
+}
