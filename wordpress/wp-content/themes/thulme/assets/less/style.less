@@ -15,11 +15,27 @@
 // Mixins
 @import "mixins";
 
-.banner {
-  background-color: @clouds;
-  border-bottom: 1px solid @silver;
+// Background color
+body {
+  background-color: mix(white, @clouds, 90%);
+}
 
-  padding-bottom: (@base-font-size * @base-line-height);
+// Logo image replacement
+.brand {
+  background-image: url('assets/images/thulme.com-symbol.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+
+  .hide-text();
+}
+
+
+.banner {
+  text-align: center;
 
   .container-fluid {
     max-width: 302px;
@@ -27,34 +43,44 @@
     margin-left: auto;
   }
 
+  // Center logo
   .brand {
-    background-image: url('assets/images/thulme.com-logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
     display: block;
     margin: (3 * @base-font-size * @base-line-height) auto (2 * @base-font-size * @base-line-height);
-    width: 302px;
-    height: 50px;
-
-    .hide-text();
   }
 
   .description {
     margin-bottom: (2 * @base-font-size * @base-line-height);
   }
+
+  @media (min-width: 979px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 360px;
+  }
 }
 
-.wrap {
-  max-width: 50em;
-  margin-right: auto;
-  margin-left: auto;
+.wrap,
+.content-info {
+  max-width: 48em;
+  margin: (@base-font-size * @base-line-height) auto;
+  padding-top: (@base-font-size * @base-line-height);
+
+  @media (min-width: 979px) {
+    margin-left: 400px;
+    margin-right: 140px;
+  }
 }
 
 .content-info {
   border-top: 1px solid @silver;
+}
 
-  max-width: 50em;
-  margin: (@base-font-size * @base-line-height) auto;
-  padding-top: (@base-font-size * @base-line-height);
+.social {
+  @media (min-width: 979px) {
+    float: right;
+    margin-right: -140px;
+  }
 }

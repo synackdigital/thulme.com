@@ -7887,10 +7887,24 @@ a .icon-flip-vertical:before {
   background-color: transparent;
   border: 0;
 }
+body {
+  background-color: #fdfefe;
+}
+.brand {
+  background-image: url('assets/images/thulme.com-symbol.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
 .banner {
-  background-color: #ecf0f1;
-  border-bottom: 1px solid #bdc3c7;
-  padding-bottom: 17.234px;
+  text-align: center;
 }
 .banner .container-fluid {
   max-width: 302px;
@@ -7898,30 +7912,40 @@ a .icon-flip-vertical:before {
   margin-left: auto;
 }
 .banner .brand {
-  background-image: url('assets/images/thulme.com-logo.png');
-  background-repeat: no-repeat;
-  background-size: cover;
   display: block;
   margin: 51.702000000000005px auto 34.468px;
-  width: 302px;
-  height: 50px;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
 }
 .banner .description {
   margin-bottom: 34.468px;
 }
-.wrap {
-  max-width: 50em;
-  margin-right: auto;
-  margin-left: auto;
+@media (min-width: 979px) {
+  .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 360px;
+  }
+}
+.wrap,
+.content-info {
+  max-width: 48em;
+  margin: 17.234px auto;
+  padding-top: 17.234px;
+}
+@media (min-width: 979px) {
+  .wrap,
+  .content-info {
+    margin-left: 400px;
+    margin-right: 140px;
+  }
 }
 .content-info {
   border-top: 1px solid #bdc3c7;
-  max-width: 50em;
-  margin: 17.234px auto;
-  padding-top: 17.234px;
+}
+@media (min-width: 979px) {
+  .social {
+    float: right;
+    margin-right: -140px;
+  }
 }
