@@ -7919,3 +7919,9 @@ a .icon-flip-vertical:before {
   margin-right: auto;
   margin-left: auto;
 }
+.content-info {
+  border-top: 1px solid #bdc3c7;
+  max-width: 50em;
+  margin: 17.234px auto;
+  padding-top: 17.234px;
+}
