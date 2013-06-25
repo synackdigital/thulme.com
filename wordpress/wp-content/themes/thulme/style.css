@@ -7891,3 +7891,9 @@ a .icon-flip-vertical:before {
   font-size: 39.998000000000005px;
   text-align: center;
 }
+.banner,
+.wrap {
+  max-width: 50em;
+  margin-right: auto;
+  margin-left: auto;
+}
