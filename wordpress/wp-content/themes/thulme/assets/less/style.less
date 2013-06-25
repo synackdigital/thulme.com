@@ -64,7 +64,7 @@ body {
 
 .wrap,
 .content-info {
-  max-width: 48em;
+  max-width: 720px;
   margin: (@base-font-size * @base-line-height) auto;
   padding-top: (@base-font-size * @base-line-height);
 
@@ -79,8 +79,13 @@ body {
 }
 
 .social {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+
   @media (min-width: 979px) {
-    float: right;
-    margin-right: -140px;
+    float: none;
+    position: absolute;
+    right: 20px;
   }
 }

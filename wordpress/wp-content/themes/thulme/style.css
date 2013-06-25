@@ -7929,7 +7929,7 @@ body {
 }
 .wrap,
 .content-info {
-  max-width: 48em;
+  max-width: 720px;
   margin: 17.234px auto;
   padding-top: 17.234px;
 }
@@ -7943,9 +7943,15 @@ body {
 .content-info {
   border-top: 1px solid #bdc3c7;
 }
+.social {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
 @media (min-width: 979px) {
   .social {
-    float: right;
-    margin-right: -140px;
+    float: none;
+    position: absolute;
+    right: 20px;
   }
 }

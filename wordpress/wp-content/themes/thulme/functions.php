@@ -31,5 +31,16 @@ add_action('wp_enqueue_scripts', 'thulme_scripts', 200);
  * After roots theme setup
  */
 function thulme_theme_setup(){
+  remove_filter('excerpt_length', 'roots_excerpt_length');
+  remove_filter('excerpt_more', 'roots_excerpt_more');
 }
 add_action( 'after_setup_theme', 'thulme_theme_setup' );
+
+function thulme_post_mailto_url(){
+  global $post;
+  $title = htmlspecialchars($post->post_title);
+  $subject = htmlspecialchars(get_bloginfo('name')).': '.$title;
+  $body = get_permalink($post->ID);
+  $url = 'mailto:?subject='.rawurlencode($subject).'&amp;body='.rawurlencode($body);
+  return $url;
+}
