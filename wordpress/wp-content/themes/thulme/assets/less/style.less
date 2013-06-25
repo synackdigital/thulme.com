@@ -12,18 +12,33 @@
 // Font Awesome
 @import "font-awesome/font-awesome";
 
+// Mixins
+@import "mixins";
 
 .banner {
-  .brand {
-    display: block;
-    margin: (@base-font-size * @base-line-height) auto;
+  max-width: 342px;
+  margin-right: auto;
+  margin-left: auto;
 
-    font-size: @h3;
-    text-align: center;
+  .brand {
+    background-image: url('assets/images/thulme.com-logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: block;
+    margin: (3 * @base-font-size * @base-line-height) auto;
+    width: 302px;
+    height: 50px;
+
+    .hide-text();
+  }
+
+  .nav-main {
+    border-bottom: 2px dashed @lightgray;
+    padding-bottom: (@base-font-size * @base-line-height);
   }
 }
 
-.banner,
 .wrap {
   max-width: 50em;
   margin-right: auto;

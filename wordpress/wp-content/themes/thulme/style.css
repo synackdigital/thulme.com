@@ -7885,13 +7885,36 @@ a .icon-flip-vertical:before {
 .icon-renren:before {
   content: "\f18b";
 }
-.banner .brand {
-  display: block;
-  margin: 17.234px auto;
-  font-size: 39.998000000000005px;
-  text-align: center;
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }
-.banner,
+.banner {
+  max-width: 342px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.banner .brand {
+  background-image: url('assets/images/thulme.com-logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 51.702000000000005px auto;
+  width: 302px;
+  height: 50px;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.banner .nav-main {
+  border-bottom: 2px dashed #bdc3c7;
+  padding-bottom: 17.234px;
+}
 .wrap {
   max-width: 50em;
   margin-right: auto;
