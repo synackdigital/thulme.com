@@ -33,6 +33,5 @@ add_action('wp_enqueue_scripts', 'thulme_scripts', 100);
  * After roots theme setup
  */
 function thulme_theme_setup(){
-  remove_theme_support('bootstrap-top-navbar');  // Disable Bootstrap's top navbar
 }
 add_action( 'after_setup_theme', 'thulme_theme_setup' );
