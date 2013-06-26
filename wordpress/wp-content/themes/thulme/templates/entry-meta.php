@@ -1,5 +1,6 @@
 <span class="label label-primary"><time class="updated" datetime="<?php echo get_the_time('c'); ?>" pubdate><?php echo get_the_date(); ?></time></span>
 
+<?php if ( is_single() ) : ?>
 <div class="social iconbar iconbar-info">
   <ul>
     <li><a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink(); ?>" title="Share on Facebook" class="fui-facebook" target="_blank" rel="nofollow"></a></li>
@@ -9,3 +10,4 @@
     <li><a href="<?php echo thulme_post_mailto_url(); ?>" title="Email link" class="fui-mail" target="_blank" rel="nofollow"></a></li>
   </ul>
 </div>
+<?php endif; ?>
