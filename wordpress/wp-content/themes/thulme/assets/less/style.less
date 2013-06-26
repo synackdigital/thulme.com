@@ -24,11 +24,12 @@ body {
 .brand {
   background-image: url('assets/images/thulme.com-symbol.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   display: inline-block;
   width: 280px;
   height: 280px;
+  max-width: 100%;
 
   .hide-text();
 }
@@ -46,7 +47,7 @@ body {
   // Center logo
   .brand {
     display: block;
-    margin: (3 * @base-font-size * @base-line-height) auto (2 * @base-font-size * @base-line-height);
+    margin: (4 * @base-font-size * @base-line-height) auto (2 * @base-font-size * @base-line-height);
   }
 
   .description {
@@ -58,7 +59,7 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 360px;
+    width: 33%;
   }
 }
 
@@ -69,7 +70,7 @@ body {
   padding-top: (@base-font-size * @base-line-height);
 
   @media (min-width: 979px) {
-    margin-left: 400px;
+    margin-left: 33%;
     margin-right: 140px;
   }
 }
@@ -96,11 +97,5 @@ body {
   }
 }
 
-.trail {
-  border-bottom: 1px solid @silver;
-
-  margin-bottom: (@base-font-size * @base-line-height);
-  padding-bottom: (@base-font-size * @base-line-height);
-
-  font-size: @h6;
+.page-header {
 }

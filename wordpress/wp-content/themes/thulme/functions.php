@@ -36,6 +36,9 @@ function thulme_theme_setup(){
 }
 add_action( 'after_setup_theme', 'thulme_theme_setup' );
 
+/**
+ * Return a mailto link with post URL
+ */
 function thulme_post_mailto_url(){
   global $post;
   $title = htmlspecialchars($post->post_title);

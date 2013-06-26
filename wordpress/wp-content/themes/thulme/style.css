@@ -7893,10 +7893,11 @@ body {
 .brand {
   background-image: url('assets/images/thulme.com-symbol.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: inline-block;
   width: 280px;
   height: 280px;
+  max-width: 100%;
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -7913,7 +7914,7 @@ body {
 }
 .banner .brand {
   display: block;
-  margin: 51.702000000000005px auto 34.468px;
+  margin: 68.936px auto 34.468px;
 }
 .banner .description {
   margin-bottom: 34.468px;
@@ -7924,7 +7925,7 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 360px;
+    width: 33%;
   }
 }
 .wrap,
@@ -7936,7 +7937,7 @@ body {
 @media (min-width: 979px) {
   .wrap,
   .content-info {
-    margin-left: 400px;
+    margin-left: 33%;
     margin-right: 140px;
   }
 }
@@ -7957,10 +7958,4 @@ body {
 }
 .hentry header {
   margin-bottom: 17.234px;
-}
-.trail {
-  border-bottom: 1px solid #bdc3c7;
-  margin-bottom: 17.234px;
-  padding-bottom: 17.234px;
-  font-size: 23.996px;
 }

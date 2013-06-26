@@ -15,18 +15,27 @@
 
   <div class="wrap container-fluid" role="document">
     <div class="content row-fluid">
-      <div class="trail">
-        <?php if( is_single() )
-          the_category( '&middot;', 'multiple' ); ?>
+
+      <?php if( is_single() ) : ?>
+      <div class="page-header">
+        <?php
+          $category = get_the_category();
+          echo '<h1><a href="'.get_category_link( $category[0]->term_id ).'" title="'.$category[0]->name.'">'.$category[0]->name.'</a></h1>';
+          echo '<p>'.$category[0]->description.'</p>';
+        ?>
       </div>
+    <?php endif; ?>
+
       <div class="main <?php echo roots_main_class(); ?>" role="main">
         <?php include roots_template_path(); ?>
       </div><!-- /.main -->
+
       <?php if (roots_display_sidebar()) : ?>
       <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
         <?php include roots_sidebar_path(); ?>
       </aside><!-- /.sidebar -->
       <?php endif; ?>
+
     </div><!-- /.content -->
   </div><!-- /.wrap -->
 
