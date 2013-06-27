@@ -27,11 +27,16 @@ body {
   background-size: contain;
 
   display: inline-block;
-  width: 280px;
-  height: 280px;
+  width: 140px;
+  height: 140px;
   max-width: 100%;
 
   .hide-text();
+
+  @media (min-width: 979px) {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 
