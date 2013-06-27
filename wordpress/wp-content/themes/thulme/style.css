@@ -7652,6 +7652,11 @@ body:after {
 .document .hentry header {
   margin-bottom: 51.702000000000005px;
 }
+.document .hentry header img {
+  float: right;
+  max-width: 50%;
+  height: auto;
+}
 @media (min-width: 979px) {
   body {
     max-width: 1468.5px;
