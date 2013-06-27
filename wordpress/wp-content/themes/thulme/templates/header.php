@@ -3,6 +3,7 @@
     <a class="logo" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
     <div class="description"><?php bloginfo('description'); ?></div>
   </div>
+  <button id="nav-toggle" class="btn"><span class="fui-list"></span></button>
   <div class="navigation">
     <nav class="nav nav-primary" role="navigation">
       <?php

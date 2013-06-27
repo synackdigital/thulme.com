@@ -76,21 +76,46 @@ body {
  * Header (banner)
  */
 .banner {
+  background-color: mix(@clouds, @background, 50%);
+  border-bottom: 1px solid @clouds;
   text-align: center;
 
   // Center content
   .brand,
   .navigation {
-    margin-top: (2 * @base-font-size * @base-line-height);
+    margin-top: (@base-font-size * @base-line-height);
     margin-left: auto;
     margin-right: auto;
     max-width: 280px;
   }
 
-  // Spacing around site description
+  // Navigation toggle
+  #nav-toggle {
+    margin-bottom: (@base-font-size * @base-line-height);
+    @media (min-width: @tabletBreakpoint) {
+      display: none;
+    }
+  }
+  .navigation,
   .description {
-    margin-bottom: (2 * @base-font-size * @base-line-height);
-    margin-top: (2 * @base-font-size * @base-line-height);
+    @media (max-width: @tabletBreakpoint) {
+      display: none;
+    }
+  }
+
+  // Spacing
+  .logo,
+  .description {
+    margin-bottom: (@base-font-size * @base-line-height);
+    @media (min-width: @tabletBreakpoint) {
+      margin-bottom: (3 * @base-font-size * @base-line-height);
+    }
+  }
+
+  // No background on big screens
+  @media (min-width: @tabletBreakpoint) {
+    background-color: transparent;
+    border-bottom: none;
   }
 
 }
