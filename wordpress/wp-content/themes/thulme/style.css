@@ -7612,7 +7612,9 @@ body:after {
 .document {
   position: relative;
 }
-.document .content {
+.document .content,
+.document .social,
+.document #respond {
   display: inline;
   float: left;
   width: 64.58333333333334%;
@@ -7620,10 +7622,17 @@ body:after {
   margin-left: 17.708333333333332%;
   margin-right: 17.708333333333332%;
 }
-.document .social {
-  position: absolute;
-  top: 17.234px;
-  right: 0;
+@media (min-width: 520px) {
+  .document .content,
+  .document .social,
+  .document #respond {
+    display: inline;
+    float: left;
+    width: 81.25%;
+    margin: 0 1.0416666666666665%;
+    margin-left: 9.374999999999998%;
+    margin-right: 9.374999999999998%;
+  }
 }
 @media (min-width: 979px) {
   .document .content {
@@ -7634,9 +7643,6 @@ body:after {
     margin-top: 34.468px;
   }
   .document .social {
-    position: relative;
-    top: auto;
-    right: auto;
     display: inline;
     float: left;
     width: 21.875%;
@@ -7646,6 +7652,26 @@ body:after {
 }
 .document .social .iconbar {
   float: right;
+}
+@media (max-width: 979px) {
+  .document .social .iconbar {
+    float: none;
+    clear: both;
+    float: left;
+  }
+  .document .social .iconbar > ul > li {
+    float: left;
+  }
+  .document .social .iconbar > ul > li:first-child > a {
+    padding: 25px 32px 25px;
+  }
+  .document .social .iconbar > ul > li > a {
+    padding: 25px 32px 25px 8px;
+  }
+  .document .social .iconbar .iconbar-unread {
+    right: 23px;
+    top: 13px;
+  }
 }
 .document .hentry header {
   margin-bottom: 51.702000000000005px;

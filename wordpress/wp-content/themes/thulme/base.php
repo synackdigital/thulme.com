@@ -53,6 +53,9 @@
         </ul>
       </div>
     </div>
+
+    <?php comments_template('/templates/comments.php'); ?>
+
     <?php endif; ?>
 
   </div><!-- /.document -->

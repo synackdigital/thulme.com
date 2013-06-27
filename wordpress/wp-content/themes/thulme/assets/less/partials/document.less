@@ -8,15 +8,21 @@
   position: relative;
 
   // Grid
-  .content {
+  .content,
+  .social,
+  #respond {
     .column(8,12);
     .push(2);
     .pull(2);
   }
-  .social {
-    position: absolute;
-    top: (@base-font-size * @base-line-height);
-    right: 0;
+  @media (min-width: @mobileBreakpoint) {
+    .content,
+    .social,
+    #respond {
+      .column(10,12);
+      .push(1);
+      .pull(1);
+    }
   }
   @media (min-width: @tabletBreakpoint) {
     .content {
@@ -24,11 +30,6 @@
       margin-top: (2 * @base-font-size * @base-line-height);
     }
     .social {
-      // Reset absolute positioning
-      position: relative;
-      top: auto;
-      right: auto;
-
       .column(2,8);
       margin-top: (3 * @base-font-size * @base-line-height);
     }
@@ -40,6 +41,12 @@
   .social {
     .iconbar {
       float: right;
+
+      // Horizontal iconbar on small screens
+      @media (max-width: @tabletBreakpoint) {
+        float: none;
+        .iconbar-horizontal();
+      }
     }
   }
 
@@ -53,6 +60,11 @@
         height: auto;
       }
     }
+  }
+
+  // Comments section
+  #respond {
+
   }
 
 }
