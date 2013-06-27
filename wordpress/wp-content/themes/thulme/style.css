@@ -7597,6 +7597,9 @@ a .icon-flip-vertical:before {
   background-color: transparent;
   border: 0;
 }
+.wrap.content .hentry header {
+  margin-bottom: 17.234px;
+}
 body {
   background-color: #fdfefe;
 }
@@ -7614,12 +7617,6 @@ body {
   background-color: transparent;
   border: 0;
 }
-@media (min-width: 979px) {
-  .brand {
-    width: 280px;
-    height: 280px;
-  }
-}
 .banner {
   text-align: center;
 }
@@ -7635,27 +7632,11 @@ body {
 .banner .description {
   margin-bottom: 34.468px;
 }
-@media (min-width: 979px) {
-  .banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 33%;
-  }
-}
 .wrap,
 .content-info {
   max-width: 720px;
   margin: 17.234px auto;
   padding-top: 17.234px;
-}
-@media (min-width: 979px) {
-  .wrap,
-  .content-info {
-    margin-left: 33%;
-    margin-right: 140px;
-  }
 }
 .content-info {
   border-top: 1px solid #bdc3c7;
@@ -7664,14 +7645,4 @@ body {
   float: right;
   margin-left: 20px;
   margin-right: 0;
-}
-@media (min-width: 979px) {
-  .social {
-    float: none;
-    position: absolute;
-    right: 20px;
-  }
-}
-.hentry header {
-  margin-bottom: 17.234px;
 }
