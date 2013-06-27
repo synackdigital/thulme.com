@@ -34,7 +34,7 @@ body {
 
   .hide-text();
 
-  @media (min-width: 979px) {
+  @media (min-width: @tabletBreakpoint) {
     width: 280px;
     height: 280px;
   }
@@ -60,7 +60,7 @@ body {
     margin-bottom: (2 * @base-font-size * @base-line-height);
   }
 
-  @media (min-width: 979px) {
+  @media (min-width: @tabletBreakpoint) {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,7 +75,7 @@ body {
   margin: (@base-font-size * @base-line-height) auto;
   padding-top: (@base-font-size * @base-line-height);
 
-  @media (min-width: 979px) {
+  @media (min-width: @tabletBreakpoint) {
     margin-left: 33%;
     margin-right: 140px;
   }
@@ -90,7 +90,7 @@ body {
   margin-left: 20px;
   margin-right: 0;
 
-  @media (min-width: 979px) {
+  @media (min-width: @tabletBreakpoint) {
     float: none;
     position: absolute;
     right: 20px;
