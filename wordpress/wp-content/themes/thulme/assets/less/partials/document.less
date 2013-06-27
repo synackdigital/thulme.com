@@ -55,9 +55,13 @@
       margin-bottom: (3 * @base-font-size * @base-line-height);
 
       img {
-        float: right;
-        max-width: 50%;
-        height: auto;
+        margin-bottom: (2 * @base-font-size * @base-line-height);
+
+        @media (min-width: @mobileBreakpoint) {
+          float: right;
+          max-width: 50%;
+          height: auto;
+        }
       }
     }
   }

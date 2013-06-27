@@ -7677,9 +7677,14 @@ body:after {
   margin-bottom: 51.702000000000005px;
 }
 .document .hentry header img {
-  float: right;
-  max-width: 50%;
-  height: auto;
+  margin-bottom: 34.468px;
+}
+@media (min-width: 520px) {
+  .document .hentry header img {
+    float: right;
+    max-width: 50%;
+    height: auto;
+  }
 }
 @media (min-width: 979px) {
   body {
