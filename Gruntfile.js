@@ -72,7 +72,8 @@ module.exports = function(grunt) {
         dest: 'wp-content/themes/thulme',
         exclusions: [
           'wordpress/wp-content/themes/thulme/**/.DS_Store',
-          'wordpress/wp-content/themes/thulme/**/Thumbs.db'
+          'wordpress/wp-content/themes/thulme/**/Thumbs.db',
+          'wordpress/wp-content/themes/thulme/assets/less'
         ]
       }
     }
