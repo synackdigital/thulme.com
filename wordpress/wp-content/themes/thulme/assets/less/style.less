@@ -15,9 +15,38 @@
 // Theme settings
 @import "config";
 @import "mixins";
+@import "grid";
 
 // Theme partials
-@import "partials/content";
+@import "partials/document";
+
+// Basic responsive grid
+body {
+  @media (min-width: @tabletBreakpoint) {
+    max-width: (@tabletBreakpoint * 1.5);
+  }
+}
+.banner,
+.document,
+.content-info {
+  .column(12);
+}
+.banner {
+  @media (min-width: @tabletBreakpoint) {
+    .column(4);
+  }
+}
+.document {
+  @media (min-width: @tabletBreakpoint) {
+    .column(8);
+  }
+}
+.content-info {
+  @media (min-width: @tabletBreakpoint) {
+    .column(8);
+    .push(4);
+  }
+}
 
 // Background color
 body {
@@ -25,78 +54,46 @@ body {
 }
 
 // Logo image replacement
-.brand {
+.logo {
   background-image: url('assets/images/thulme.com-symbol.png');
   background-repeat: no-repeat;
   background-size: contain;
 
   display: inline-block;
-  width: 140px;
-  height: 140px;
+  width: 280px;
+  height: 280px;
   max-width: 100%;
 
   .hide-text();
-
-  // @media (min-width: @tabletBreakpoint) {
-  //   width: 280px;
-  //   height: 280px;
-  // }
 }
 
-
+/*
+ * Header (banner)
+ */
 .banner {
   text-align: center;
 
-  .container-fluid {
-    max-width: 302px;
-    margin-right: auto;
+  // Center content
+  .brand,
+  .navigation {
+    margin-top: (2 * @base-font-size * @base-line-height);
     margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
   }
 
-  // Center logo
-  .brand {
-    display: block;
-    margin: (4 * @base-font-size * @base-line-height) auto (2 * @base-font-size * @base-line-height);
-  }
-
+  // Spacing around site description
   .description {
     margin-bottom: (2 * @base-font-size * @base-line-height);
+    margin-top: (2 * @base-font-size * @base-line-height);
   }
 
-  // @media (min-width: @tabletBreakpoint) {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   width: 33%;
-  // }
 }
 
-.wrap,
-.content-info {
-  max-width: 720px;
-  margin: (@base-font-size * @base-line-height) auto;
-  padding-top: (@base-font-size * @base-line-height);
-
-  // @media (min-width: @tabletBreakpoint) {
-  //   margin-left: 33%;
-  //   margin-right: 140px;
-  // }
-}
-
+/*
+ * Footer (content info)
+ */
 .content-info {
   border-top: 1px solid @silver;
-}
-
-.social {
-  float: right;
-  margin-left: 20px;
-  margin-right: 0;
-
-  // @media (min-width: @tabletBreakpoint) {
-  //   float: none;
-  //   position: absolute;
-  //   right: 20px;
-  // }
 }
 

@@ -13,18 +13,19 @@
     }
   ?>
 
-  <div class="wrap container-fluid" role="document">
-    <div class="content row-fluid">
+  <div class="document" role="document">
 
-      <?php if( is_single() ) : ?>
-      <div class="page-header">
-        <?php
-          $category = get_the_category();
-          echo '<h1><a href="'.get_category_link( $category[0]->term_id ).'" title="'.$category[0]->name.'">'.$category[0]->name.'</a></h1>';
-          echo '<p>'.$category[0]->description.'</p>';
-        ?>
-      </div>
+    <?php if( is_single() ) : ?>
+    <div class="page-header">
+      <?php
+        $category = get_the_category();
+        echo '<h1><a href="'.get_category_link( $category[0]->term_id ).'" title="'.$category[0]->name.'">'.$category[0]->name.'</a></h1>';
+        echo '<p>'.$category[0]->description.'</p>';
+      ?>
+    </div>
     <?php endif; ?>
+
+    <div class="content">
 
       <div class="main <?php echo roots_main_class(); ?>" role="main">
         <?php include roots_template_path(); ?>
@@ -37,7 +38,22 @@
       <?php endif; ?>
 
     </div><!-- /.content -->
-  </div><!-- /.wrap -->
+
+    <?php if ( is_single() ) : ?>
+    <div class="social">
+      <div class="iconbar iconbar-info">
+        <ul>
+          <li><a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink(); ?>" title="Share on Facebook" class="fui-facebook" target="_blank" rel="nofollow"></a></li>
+          <li><a href="http://twitter.com/share?text=<?php echo get_the_title(); ?>&via=thulme&url=<?php echo get_permalink(); ?>" title="Share on Twitter" class="fui-twitter" target="_blank" rel="nofollow"></a></li>
+          <li><a href="https://plus.google.com/share?url=<?php echo get_permalink(); ?>" title="Share on Google+" class="fui-googleplus" target="_blank" rel="nofollow"></a></li>
+          <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink(); ?>&title=<?php echo get_the_title(); ?>&summary=<?php echo strip_tags(get_the_excerpt()); ?>&source=<?php bloginfo('name'); ?>" title="Share on LinkedIn" class="fui-linkedin" target="_blank" rel="nofollow"></a></li>
+          <li><a href="<?php echo thulme_post_mailto_url(); ?>" title="Email link" class="fui-mail" target="_blank" rel="nofollow"></a></li>
+        </ul>
+      </div>
+    </div>
+    <?php endif; ?>
+
+  </div><!-- /.document -->
 
   <?php get_template_part('templates/footer'); ?>
 

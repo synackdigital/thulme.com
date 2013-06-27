@@ -1,7 +1,9 @@
 <header class="banner" role="banner">
-  <div class="container-fluid">
-    <a class="brand" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
+  <div class="brand">
+    <a class="logo" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
     <div class="description"><?php bloginfo('description'); ?></div>
+  </div>
+  <div class="navigation">
     <nav class="nav nav-primary" role="navigation">
       <?php
         if (has_nav_menu('primary_navigation')) :

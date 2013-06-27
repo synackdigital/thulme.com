@@ -1,0 +1,54 @@
+//
+// Everything inside .document
+// --------------------------------------------------
+
+.document {
+
+  // Enable absolutely positioned social bar
+  position: relative;
+
+  // Grid
+  .page-header,
+  .content {
+    .column(8,12);
+    .push(2);
+    .pull(2);
+  }
+  .social {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  @media (min-width: @tabletBreakpoint) {
+    .page-header,
+    .content {
+      .column(6,8);
+      margin-top: (2 * @base-font-size * @base-line-height);
+    }
+    .social {
+      // Reset absolute positioning
+      position: relative;
+      top: auto;
+      right: auto;
+
+      .column(2,8);
+      margin-top: (2 * @base-font-size * @base-line-height);
+    }
+  }
+
+  .page-header {
+  }
+
+  .social {
+    .iconbar {
+      float: right;
+    }
+  }
+
+  .hentry {
+    header {
+      margin-bottom: (3 * @base-font-size * @base-line-height);
+    }
+  }
+
+}
