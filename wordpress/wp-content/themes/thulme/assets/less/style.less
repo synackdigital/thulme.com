@@ -12,12 +12,13 @@
 // Font Awesome
 @import "font-awesome/font-awesome";
 
-// Mixins
+// Theme partials
+@import "config";
 @import "mixins";
 
 // Background color
 body {
-  background-color: mix(white, @clouds, 90%);
+  background-color: @background;
 }
 
 // Logo image replacement
