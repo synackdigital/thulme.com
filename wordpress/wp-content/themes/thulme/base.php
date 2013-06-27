@@ -15,20 +15,22 @@
 
   <div class="document" role="document">
 
-    <?php if( is_single() ) : ?>
-    <div class="page-header">
-      <?php
-        $category = get_the_category();
-        echo '<h1><a href="'.get_category_link( $category[0]->term_id ).'" title="'.$category[0]->name.'">'.$category[0]->name.'</a></h1>';
-        echo '<p>'.$category[0]->description.'</p>';
-      ?>
-    </div>
-    <?php endif; ?>
-
     <div class="content">
 
       <div class="main <?php echo roots_main_class(); ?>" role="main">
+
+        <?php if( is_single() ) : ?>
+        <div class="page-header">
+          <?php
+            $category = get_the_category();
+            echo '<h1><a href="'.get_category_link( $category[0]->term_id ).'" title="'.$category[0]->name.'">'.$category[0]->name.'</a></h1>';
+            echo '<p>'.$category[0]->description.'</p>';
+          ?>
+        </div>
+        <?php endif; ?>
+
         <?php include roots_template_path(); ?>
+
       </div><!-- /.main -->
 
       <?php if (roots_display_sidebar()) : ?>

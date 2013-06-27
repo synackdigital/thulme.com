@@ -8,7 +8,6 @@
   position: relative;
 
   // Grid
-  .page-header,
   .content {
     .column(8,12);
     .push(2);
@@ -16,11 +15,10 @@
   }
   .social {
     position: absolute;
-    top: 0;
+    top: (@base-font-size * @base-line-height);
     right: 0;
   }
   @media (min-width: @tabletBreakpoint) {
-    .page-header,
     .content {
       .column(6,8);
       margin-top: (2 * @base-font-size * @base-line-height);
@@ -32,7 +30,7 @@
       right: auto;
 
       .column(2,8);
-      margin-top: (2 * @base-font-size * @base-line-height);
+      margin-top: (3 * @base-font-size * @base-line-height);
     }
   }
 
