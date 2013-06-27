@@ -7686,6 +7686,14 @@ body:after {
     height: auto;
   }
 }
+body.archive .document .hentry header {
+  border-bottom: 1px dotted #bdc3c7;
+  padding-bottom: 17.234px;
+  margin-bottom: 17.234px;
+}
+body.archive .document .hentry header h2 {
+  margin-bottom: .25em;
+}
 @media (min-width: 979px) {
   body {
     max-width: 1468.5px;
@@ -7743,8 +7751,8 @@ body {
 }
 @media (min-width: 979px) {
   .logo {
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
   }
 }
 /*

@@ -51,6 +51,8 @@
   }
 
   .hentry {
+
+    // Entry headers
     header {
       margin-bottom: (3 * @base-font-size * @base-line-height);
 
@@ -61,6 +63,17 @@
           float: right;
           max-width: 50%;
           height: auto;
+        }
+      }
+
+      body.archive & {
+        border-bottom: 1px dotted @silver;
+
+        padding-bottom: (@base-font-size * @base-line-height);
+        margin-bottom: (@base-font-size * @base-line-height);
+
+        h2 {
+          margin-bottom: .25em;
         }
       }
     }
