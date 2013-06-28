@@ -53,25 +53,6 @@ body {
   background-color: @background;
 }
 
-// Logo image replacement
-.logo {
-  background-image: url('assets/images/thulme.com-symbol.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  display: inline-block;
-  width: 140px;
-  height: 140px;
-  max-width: 100%;
-
-  .hide-text();
-
-  @media (min-width: @tabletBreakpoint) {
-    width: 220px;
-    height: 220px;
-  }
-}
-
 /*
  * Header (banner)
  */
@@ -89,6 +70,12 @@ body {
     max-width: 280px;
   }
 
+  // Title
+  .title {
+    display: block;
+    font-size: @h5;
+  }
+
   // Navigation toggle
   #nav-toggle {
     margin-bottom: (@base-font-size * @base-line-height);
@@ -104,7 +91,7 @@ body {
   }
 
   // Spacing
-  .logo,
+  .title,
   .description {
     margin-bottom: (@base-font-size * @base-line-height);
     @media (min-width: @tabletBreakpoint) {

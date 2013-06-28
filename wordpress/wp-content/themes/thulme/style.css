@@ -7765,26 +7765,6 @@ body.archive .document .hentry header h2 {
 body {
   background-color: #fdfefe;
 }
-.logo {
-  background-image: url('assets/images/thulme.com-symbol.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  width: 140px;
-  height: 140px;
-  max-width: 100%;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-@media (min-width: 979px) {
-  .logo {
-    width: 220px;
-    height: 220px;
-  }
-}
 /*
  * Header (banner)
  */
@@ -7800,6 +7780,10 @@ body {
   margin-right: auto;
   max-width: 280px;
 }
+.banner .title {
+  display: block;
+  font-size: 28px;
+}
 .banner #nav-toggle {
   margin-bottom: 17.234px;
 }
@@ -7814,12 +7798,12 @@ body {
     display: none;
   }
 }
-.banner .logo,
+.banner .title,
 .banner .description {
   margin-bottom: 17.234px;
 }
 @media (min-width: 979px) {
-  .banner .logo,
+  .banner .title,
   .banner .description {
     margin-bottom: 51.702000000000005px;
   }
