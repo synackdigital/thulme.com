@@ -121,6 +121,82 @@ body {
 }
 
 /*
+ * Navigation category colors
+ */
+.nav-list {
+  // Weiji
+  & > li[class*='weiji'] {
+    a {
+      color: @weiji;
+
+      &:hover,
+      &:focus {
+        background-color: mix(@background, @weiji, 80%);
+        color: darken(@weiji, 15%);
+      }
+    }
+
+    &.active,
+    &.active,
+    &.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: @weiji;
+        color: white;
+      }
+    }
+  }
+  // Startup Tools
+  & > li[class*='startup-tools'] {
+    a {
+      color: @startup-tools;
+
+      &:hover,
+      &:focus {
+        background-color: mix(@background, @startup-tools, 80%);
+        color: darken(@startup-tools, 15%);
+      }
+    }
+
+    &.active,
+    &.active,
+    &.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: @startup-tools;
+        color: white;
+      }
+    }
+  }
+  // Open Design
+  & > li[class*='open-design'] {
+    a {
+      color: @open-design;
+
+      &:hover,
+      &:focus {
+        background-color: mix(@background, @open-design, 80%);
+        color: darken(@open-design, 15%);
+      }
+    }
+
+    &.active,
+    &.active,
+    &.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: @open-design;
+        color: white;
+      }
+    }
+  }
+
+}
+
+/*
  * Footer (content info)
  */
 .content-info {

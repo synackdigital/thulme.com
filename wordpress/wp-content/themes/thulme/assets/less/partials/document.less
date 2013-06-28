@@ -36,6 +36,42 @@
   }
 
   .page-header {
+    body.category-weiji & {
+      color: @weiji;
+
+      a {
+        color: @weiji;
+
+        &:hover,
+        &:focus {
+          color: darken(@weiji, 15%);
+        }
+      }
+    }
+    body.category-open-design & {
+      color: @open-design;
+
+      a {
+        color: @open-design;
+
+        &:hover,
+        &:focus {
+          color: darken(@open-design, 15%);
+        }
+      }
+    }
+    body.category-startup-tools & {
+      color: @startup-tools;
+
+      a {
+        color: @startup-tools;
+
+        &:hover,
+        &:focus {
+          color: darken(@startup-tools, 15%);
+        }
+      }
+    }
   }
 
   .social {

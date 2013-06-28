@@ -418,7 +418,7 @@ textarea {
   font-size: 14px;
 }
 a {
-  color: #16a085;
+  color: #7f8c8d;
   text-decoration: none;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
@@ -427,7 +427,7 @@ a {
   -webkit-backface-visibility: hidden;
 }
 a:hover {
-  color: #1abc9c;
+  color: #2c3e50;
   text-decoration: none;
 }
 h1,
@@ -3053,7 +3053,7 @@ input.search-query {
 }
 .checkbox.checked,
 .radio.checked {
-  color: #16a085;
+  color: #7f8c8d;
 }
 .checkbox.checked .icons,
 .radio.checked .icons {
@@ -3108,7 +3108,7 @@ input.search-query {
 }
 .checkbox.primary.checked,
 .radio.primary.checked {
-  color: #16a085;
+  color: #7f8c8d;
 }
 .checkbox.primary.checked .icons,
 .radio.primary.checked .icons {
@@ -4869,7 +4869,7 @@ input.search-query {
   border-color: #e0eaeb;
 }
 .alert-success a {
-  color: #16a085;
+  color: #7f8c8d;
 }
 .alert-info {
   background-color: #f7f9fa;
@@ -7650,6 +7650,36 @@ body:after {
     margin-top: 51.702000000000005px;
   }
 }
+body.category-weiji .document .page-header {
+  color: #3498db;
+}
+body.category-weiji .document .page-header a {
+  color: #3498db;
+}
+body.category-weiji .document .page-header a:hover,
+body.category-weiji .document .page-header a:focus {
+  color: #1d6fa5;
+}
+body.category-open-design .document .page-header {
+  color: #1abc9c;
+}
+body.category-open-design .document .page-header a {
+  color: #1abc9c;
+}
+body.category-open-design .document .page-header a:hover,
+body.category-open-design .document .page-header a:focus {
+  color: #117964;
+}
+body.category-startup-tools .document .page-header {
+  color: #e74c3c;
+}
+body.category-startup-tools .document .page-header a {
+  color: #e74c3c;
+}
+body.category-startup-tools .document .page-header a:hover,
+body.category-startup-tools .document .page-header a:focus {
+  color: #bf2718;
+}
 .document .social .iconbar {
   float: right;
 }
@@ -7799,6 +7829,69 @@ body {
     background-color: transparent;
     border-bottom: none;
   }
+}
+/*
+ * Navigation category colors
+ */
+.nav-list > li[class*='weiji'] a {
+  color: #3498db;
+}
+.nav-list > li[class*='weiji'] a:hover,
+.nav-list > li[class*='weiji'] a:focus {
+  background-color: #d5e9f7;
+  color: #1d6fa5;
+}
+.nav-list > li[class*='weiji'].active a,
+.nav-list > li[class*='weiji'].active a,
+.nav-list > li[class*='weiji'].active a,
+.nav-list > li[class*='weiji'].active a:hover,
+.nav-list > li[class*='weiji'].active a:hover,
+.nav-list > li[class*='weiji'].active a:hover,
+.nav-list > li[class*='weiji'].active a:focus,
+.nav-list > li[class*='weiji'].active a:focus,
+.nav-list > li[class*='weiji'].active a:focus {
+  background-color: #3498db;
+  color: white;
+}
+.nav-list > li[class*='startup-tools'] a {
+  color: #e74c3c;
+}
+.nav-list > li[class*='startup-tools'] a:hover,
+.nav-list > li[class*='startup-tools'] a:focus {
+  background-color: #f9dad7;
+  color: #bf2718;
+}
+.nav-list > li[class*='startup-tools'].active a,
+.nav-list > li[class*='startup-tools'].active a,
+.nav-list > li[class*='startup-tools'].active a,
+.nav-list > li[class*='startup-tools'].active a:hover,
+.nav-list > li[class*='startup-tools'].active a:hover,
+.nav-list > li[class*='startup-tools'].active a:hover,
+.nav-list > li[class*='startup-tools'].active a:focus,
+.nav-list > li[class*='startup-tools'].active a:focus,
+.nav-list > li[class*='startup-tools'].active a:focus {
+  background-color: #e74c3c;
+  color: white;
+}
+.nav-list > li[class*='open-design'] a {
+  color: #1abc9c;
+}
+.nav-list > li[class*='open-design'] a:hover,
+.nav-list > li[class*='open-design'] a:focus {
+  background-color: #d0f0ea;
+  color: #117964;
+}
+.nav-list > li[class*='open-design'].active a,
+.nav-list > li[class*='open-design'].active a,
+.nav-list > li[class*='open-design'].active a,
+.nav-list > li[class*='open-design'].active a:hover,
+.nav-list > li[class*='open-design'].active a:hover,
+.nav-list > li[class*='open-design'].active a:hover,
+.nav-list > li[class*='open-design'].active a:focus,
+.nav-list > li[class*='open-design'].active a:focus,
+.nav-list > li[class*='open-design'].active a:focus {
+  background-color: #1abc9c;
+  color: white;
 }
 /*
  * Footer (content info)
