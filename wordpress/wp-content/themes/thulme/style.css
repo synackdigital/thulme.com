@@ -7618,7 +7618,6 @@ body:after {
   position: relative;
 }
 .document .content,
-.document .social,
 .document #respond {
   display: inline;
   float: left;
@@ -7633,15 +7632,8 @@ body:after {
     float: left;
     width: 67.1875%;
     margin: 0 0.78125%;
-    margin-right: 4.687499999999999%;
+    margin-right: 21.354166666666668%;
     margin-top: 34.468px;
-  }
-  .document .social {
-    display: inline;
-    float: left;
-    width: 23.4375%;
-    margin: 0 0.78125%;
-    margin-top: 51.702000000000005px;
   }
 }
 body.category-weiji .document .page-header {
