@@ -7716,8 +7716,7 @@ body.archive .document .hentry header h2 {
   }
 }
 .banner,
-.document,
-.content-info {
+.document {
   display: inline;
   float: left;
   width: 98.95833333333334%;
@@ -7737,14 +7736,6 @@ body.archive .document .hentry header h2 {
     width: 65.625%;
     margin: 0 0.5208333333333333%;
     margin-left: 8.854166666666666%;
-    margin-right: 4.687499999999999%;
-  }
-  .content-info {
-    display: inline;
-    float: left;
-    width: 65.625%;
-    margin: 0 0.5208333333333333%;
-    margin-left: 29.6875%;
     margin-right: 4.687499999999999%;
   }
 }
