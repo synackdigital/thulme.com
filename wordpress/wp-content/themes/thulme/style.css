@@ -7760,6 +7760,7 @@ body {
 .banner .title {
   display: block;
   font-size: 28px;
+  font-variant: small-caps;
 }
 .banner #nav-toggle {
   margin-bottom: 17.234px;
