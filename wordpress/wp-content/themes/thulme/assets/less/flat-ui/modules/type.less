@@ -4,6 +4,7 @@
 body {
   color: @base;
   font-family: @base-font-family;
+  font-weight: @base-font-weight;
   font-size: @base-font-size;
   line-height: @base-line-height;
 }
@@ -13,6 +14,7 @@ button,
 select,
 textarea {
   font-family: @base-font-family;
+  font-weight: @base-font-weight;
   font-size: @base-font-size;
 }
 
@@ -24,6 +26,17 @@ a {
     color: @link-hover-color;
     text-decoration: none;
   }
+}
+
+// Heading font
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: @alt-font-family;
+  font-weight: @alt-font-weight;
 }
 
 // Heading sizes
@@ -44,32 +57,17 @@ h6, .h6 {
 }
 
 // H1—H6 specific styling
-h1 {
-  font-weight: 500;
-}
-
 h2 {
-  font-weight: 500;
   margin-bottom: 2px;
 }
 
 h3 {
-  font-weight: 500;
   margin-bottom: 4px;
   margin-top: 2px;
 }
 
 h4 {
-  font-weight: 500;
   margin-top: 4px;
-}
-
-h5 {
-  font-weight: 500;
-}
-
-h6 {
-  font-weight: 700;
 }
 
 // Paragraph
