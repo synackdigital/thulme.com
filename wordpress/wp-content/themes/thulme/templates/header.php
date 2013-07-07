@@ -1,7 +1,6 @@
 <header class="banner" role="banner">
   <div class="brand">
     <a class="title" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
-    <div class="description"><?php bloginfo('description'); ?></div>
   </div>
   <button id="nav-toggle" class="btn"><span class="fui-list"></span></button>
   <div class="navigation">
@@ -20,4 +19,5 @@
       ?>
     </nav>
   </div>
+  <!-- <div class="description"><?php bloginfo('description'); ?></div> -->
 </header>

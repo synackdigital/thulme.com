@@ -15,18 +15,10 @@
     .push(1);
     .pull(1);
   }
-  @media (min-width: @mobileBreakpoint) {
-    .content,
-    .social,
-    #respond {
-      .column(18,24);
-      .push(3);
-      .pull(3);
-    }
-  }
   @media (min-width: @tabletBreakpoint) {
     .content {
-      .column(12,16);
+      .column(11,16);
+      .pull(1);
       margin-top: (2 * @base-font-size * @base-line-height);
     }
     .social {

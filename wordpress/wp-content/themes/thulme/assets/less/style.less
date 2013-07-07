@@ -31,44 +31,32 @@ body {
 .content-info {
   .column(24);
 }
-.banner {
-  @media (min-width: @tabletBreakpoint) {
-    .column(8);
+@media (min-width: @tabletBreakpoint) {
+  .banner {
+    .column(4);
+    .push(1);
   }
-}
-.document {
-  @media (min-width: @tabletBreakpoint) {
+  .document {
     .column(16);
+    .push(2);
+    .pull(1);
   }
-}
-.content-info {
-  @media (min-width: @tabletBreakpoint) {
+  .content-info {
     .column(16);
-    .push(8);
+    .push(7);
+    .pull(1);
   }
 }
 
 // Background color
 body {
-  background-color: @background;
+  background-color: @stockholm;
 }
 
 /*
  * Header (banner)
  */
 .banner {
-  background-color: mix(@clouds, @background, 50%);
-  border-bottom: 1px solid @clouds;
-  text-align: center;
-
-  // Center content
-  .brand,
-  .navigation {
-    margin-top: (@base-font-size * @base-line-height);
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 280px;
-  }
 
   // Title
   .title {
@@ -99,10 +87,9 @@ body {
     }
   }
 
-  // No background on big screens
+  // Push down on big screens
   @media (min-width: @tabletBreakpoint) {
-    background-color: transparent;
-    border-bottom: none;
+    margin-top: (4 * @base-font-size * @base-line-height);
   }
 
 }
@@ -111,15 +98,48 @@ body {
  * Navigation category colors
  */
 .nav-list {
-  // Weiji
-  & > li[class*='weiji'] {
+  .clearfix();
+  & > li {
+    float: left;
+    clear: left;
+    margin-bottom: (@base-font-size * @base-line-height);
+  }
+  & > li a {
+    border-bottom: 2px solid transparent;
+    .border-radius(0);
+  }
+  // About (thulme)
+  & > li[class*='about'] {
     a {
-      color: @weiji;
+      border-bottom-color: @thulme;
 
       &:hover,
       &:focus {
-        background-color: mix(@background, @weiji, 80%);
-        color: darken(@weiji, 15%);
+        background-color: @thulme;
+        color: black;
+      }
+    }
+
+    &.active,
+    &.active,
+    &.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: @thulme;
+        color: black;
+      }
+    }
+  }
+  // Weiji
+  & > li[class*='weiji'] {
+    a {
+      border-bottom-color: @weiji;
+
+      &:hover,
+      &:focus {
+        background-color: @weiji;
+        color: white;
       }
     }
 
@@ -137,12 +157,12 @@ body {
   // Startup Tools
   & > li[class*='startup-tools'] {
     a {
-      color: @startup-tools;
+      border-bottom-color: @startup-tools;
 
       &:hover,
       &:focus {
-        background-color: mix(@background, @startup-tools, 80%);
-        color: darken(@startup-tools, 15%);
+        background-color: @startup-tools;
+        color: @deep-sea;
       }
     }
 
@@ -153,19 +173,19 @@ body {
       a:hover,
       a:focus {
         background-color: @startup-tools;
-        color: white;
+        color: @deep-sea;
       }
     }
   }
   // Open Design
   & > li[class*='open-design'] {
     a {
-      color: @open-design;
+      border-bottom-color: @open-design;
 
       &:hover,
       &:focus {
-        background-color: mix(@background, @open-design, 80%);
-        color: darken(@open-design, 15%);
+        background-color: @open-design;
+        color: @deep-sea;
       }
     }
 
@@ -176,7 +196,7 @@ body {
       a:hover,
       a:focus {
         background-color: @open-design;
-        color: white;
+        color: @deep-sea;
       }
     }
   }
