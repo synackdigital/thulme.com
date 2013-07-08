@@ -8,3 +8,14 @@
   background-color: transparent;
   border: 0;
 }
+
+// Horizontal gradient
+// -------------------------
+.horizontal-gradient(@from, @to) {
+  background: -webkit-gradient(linear, left, right, color-stop(0%, @from), color-stop(100%, @to));
+  background: -webkit-linear-gradient(left, @from, @to);
+  background:    -moz-linear-gradient(left, @from, @to);
+  background:     -ms-linear-gradient(left, @from, @to);
+  background:      -o-linear-gradient(left, @from, @to);
+  background:   linear-gradient(to right, @from, @to);
+}

@@ -7743,6 +7743,41 @@ body {
   font-size: 39.998000000000005px;
   font-variant: small-caps;
   letter-spacing: -1px;
+  /* Striped pseudo-border */
+
+  position: relative;
+  /* Animate border on hover */
+
+}
+.banner .title:after {
+  background: -webkit-gradient(linear, left, right, color-stop(0%, #40e2e1), color-stop(25%, #40e2e1), color-stop(25%, #ebc434), color-stop(50%, #ebc434), color-stop(50%, #90cc3a), color-stop(75%, #90cc3a), color-stop(75%, #d13351), color-stop(100%, #d13351));
+  background: -webkit-linear-gradient(left, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
+  background: -moz-linear-gradient(left, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
+  background: -ms-linear-gradient(left, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
+  background: -o-linear-gradient(left, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
+  background: linear-gradient(to right, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
+  content: ' ';
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+}
+.banner .title:after {
+  -webkit-transition: height 120ms ease-in-out;
+  -moz-transition: height 120ms ease-in-out;
+  -o-transition: height 120ms ease-in-out;
+  transition: height 120ms ease-in-out;
+  -webkit-backface-visibility: hidden;
+}
+.banner .title:hover:after,
+.banner .title:focus:after {
+  height: 100%;
 }
 .banner .navigation .nav-list li a {
   font-family: 'Knockout 31 A', 'Knockout 31 B', sans-serif;

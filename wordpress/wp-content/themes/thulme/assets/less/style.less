@@ -64,6 +64,61 @@ body {
     font-size: @h3;
     font-variant: small-caps;
     letter-spacing: -1px;
+
+    /* Striped pseudo-border */
+    position: relative;
+    &:after {
+      background: -webkit-gradient(linear, left, right,
+        color-stop(0%, @thulme), color-stop(25%, @thulme),
+        color-stop(25%, @open-design), color-stop(50%, @open-design),
+        color-stop(50%, @startup-tools), color-stop(75%, @startup-tools),
+        color-stop(75%, @weiji), color-stop(100%, @weiji));
+      background: -webkit-linear-gradient(left,
+        @thulme 0%, @thulme 25%,
+        @open-design 25%, @open-design 50%,
+        @startup-tools 50%, @startup-tools 75%,
+        @weiji 75%, @weiji 100%);
+      background: -moz-linear-gradient(left,
+        @thulme 0%, @thulme 25%,
+        @open-design 25%, @open-design 50%,
+        @startup-tools 50%, @startup-tools 75%,
+        @weiji 75%, @weiji 100%);
+      background: -ms-linear-gradient(left,
+        @thulme 0%, @thulme 25%,
+        @open-design 25%, @open-design 50%,
+        @startup-tools 50%, @startup-tools 75%,
+        @weiji 75%, @weiji 100%);
+      background: -o-linear-gradient(left,
+        @thulme 0%, @thulme 25%,
+        @open-design 25%, @open-design 50%,
+        @startup-tools 50%, @startup-tools 75%,
+        @weiji 75%, @weiji 100%);
+      background: linear-gradient(to right,
+        @thulme 0%, @thulme 25%,
+        @open-design 25%, @open-design 50%,
+        @startup-tools 50%, @startup-tools 75%,
+        @weiji 75%, @weiji 100%);
+
+      content: ' ';
+      .hide-text();
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 3px;
+    }
+
+    /* Animate border on hover */
+    &:after {
+      .transition(~"height 120ms ease-in-out");
+    }
+    &:hover,
+    &:focus {
+      &:after {
+        height: 100%;
+      }
+    }
   }
 
   // Navigation
