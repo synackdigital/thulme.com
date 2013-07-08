@@ -7796,6 +7796,7 @@ body {
 }
 .nav-list > li a {
   border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -7805,6 +7806,7 @@ body {
 }
 .nav-list > li[class*='about'] a:hover,
 .nav-list > li[class*='about'] a:focus {
+  border-top-color: #40e2e1;
   background-color: #40e2e1;
   color: black;
 }
@@ -7825,6 +7827,7 @@ body {
 }
 .nav-list > li[class*='weiji'] a:hover,
 .nav-list > li[class*='weiji'] a:focus {
+  border-top-color: #d13351;
   background-color: #d13351;
   color: white;
 }
@@ -7845,6 +7848,7 @@ body {
 }
 .nav-list > li[class*='startup-tools'] a:hover,
 .nav-list > li[class*='startup-tools'] a:focus {
+  border-top-color: #90cc3a;
   background-color: #90cc3a;
   color: #2e2d33;
 }
@@ -7865,6 +7869,7 @@ body {
 }
 .nav-list > li[class*='open-design'] a:hover,
 .nav-list > li[class*='open-design'] a:focus {
+  border-top-color: #ebc434;
   background-color: #ebc434;
   color: #2e2d33;
 }
