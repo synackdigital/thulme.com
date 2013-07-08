@@ -51,6 +51,11 @@ body {
  */
 .banner {
 
+  // Push down on big screens
+  @media (min-width: @tabletBreakpoint) {
+    margin-top: (4 * @base-font-size * @base-line-height);
+  }
+
   // Title
   .title {
     display: block;
@@ -89,13 +94,8 @@ body {
   .description {
     margin-bottom: (@base-font-size * @base-line-height);
     @media (min-width: @tabletBreakpoint) {
-      margin-bottom: (3 * @base-font-size * @base-line-height);
+      margin-bottom: (3.5 * @base-font-size * @base-line-height);
     }
-  }
-
-  // Push down on big screens
-  @media (min-width: @tabletBreakpoint) {
-    margin-top: (4 * @base-font-size * @base-line-height);
   }
 
 }

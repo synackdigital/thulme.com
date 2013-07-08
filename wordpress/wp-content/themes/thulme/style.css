@@ -7620,6 +7620,9 @@ body:after {
 .document .content {
   margin-top: 34.468px;
 }
+.document .page-header {
+  margin-top: 68.936px;
+}
 body.category-weiji .document .page-header {
   color: #d13351;
 }
@@ -7728,6 +7731,11 @@ body {
 /*
  * Header (banner)
  */
+@media (min-width: 979px) {
+  .banner {
+    margin-top: 68.936px;
+  }
+}
 .banner .title {
   display: block;
   font-family: 'Knockout 31 A', 'Knockout 31 B', sans-serif;
@@ -7764,12 +7772,7 @@ body {
 @media (min-width: 979px) {
   .banner .title,
   .banner .description {
-    margin-bottom: 51.702000000000005px;
-  }
-}
-@media (min-width: 979px) {
-  .banner {
-    margin-top: 68.936px;
+    margin-bottom: 60.319px;
   }
 }
 /*
