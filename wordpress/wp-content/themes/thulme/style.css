@@ -7737,7 +7737,7 @@ body {
   }
 }
 .banner .title {
-  display: block;
+  display: inline-block;
   font-family: 'Knockout 31 A', 'Knockout 31 B', sans-serif;
   font-weight: 400;
   font-size: 39.998000000000005px;
