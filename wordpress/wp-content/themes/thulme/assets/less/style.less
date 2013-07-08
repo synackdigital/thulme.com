@@ -32,13 +32,12 @@ body {
 }
 @media (min-width: @tabletBreakpoint) {
   .banner {
-    .column(4);
+    .column(5);
     .push(1);
   }
   .document {
-    .column(16);
-    .push(2);
-    .pull(1);
+    .column(12);
+    .push(1);
   }
 }
 
@@ -55,8 +54,20 @@ body {
   // Title
   .title {
     display: block;
-    font-size: @h5;
+    font-family: @alt-font-family;
+    font-weight: @alt-font-weight;
+    font-size: @h3;
     font-variant: small-caps;
+    letter-spacing: -1px;
+  }
+
+  // Navigation
+  .navigation .nav-list li a {
+    font-family: @alt-font-family;
+    font-weight: @alt-font-weight;
+    font-size: @p;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 
   // Navigation toggle

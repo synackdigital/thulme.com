@@ -7,19 +7,8 @@
   // Enable absolutely positioned social bar
   position: relative;
 
-  // Grid
-  .content,
-  #respond {
-    .column(22,24);
-    .push(1);
-    .pull(1);
-  }
-  @media (min-width: @tabletBreakpoint) {
-    .content {
-      .column(11,16);
-      .pull(5);
-      margin-top: (2 * @base-font-size * @base-line-height);
-    }
+  .content {
+    margin-top: (2 * @base-font-size * @base-line-height);
   }
 
   .page-header {

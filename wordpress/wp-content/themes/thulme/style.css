@@ -7617,24 +7617,8 @@ body:after {
 .document {
   position: relative;
 }
-.document .content,
-.document #respond {
-  display: inline;
-  float: left;
-  width: 90.625%;
-  margin: 0 0.5208333333333333%;
-  margin-left: 4.687499999999999%;
-  margin-right: 4.687499999999999%;
-}
-@media (min-width: 979px) {
-  .document .content {
-    display: inline;
-    float: left;
-    width: 67.1875%;
-    margin: 0 0.78125%;
-    margin-right: 21.354166666666668%;
-    margin-top: 34.468px;
-  }
+.document .content {
+  margin-top: 34.468px;
 }
 body.category-weiji .document .page-header {
   color: #d13351;
@@ -7726,17 +7710,16 @@ body.archive .document .hentry header h2 {
   .banner {
     display: inline;
     float: left;
-    width: 15.625%;
+    width: 19.791666666666664%;
     margin: 0 0.5208333333333333%;
     margin-left: 4.687499999999999%;
   }
   .document {
     display: inline;
     float: left;
-    width: 65.625%;
+    width: 48.95833333333333%;
     margin: 0 0.5208333333333333%;
-    margin-left: 8.854166666666666%;
-    margin-right: 4.687499999999999%;
+    margin-left: 4.687499999999999%;
   }
 }
 body {
@@ -7747,8 +7730,18 @@ body {
  */
 .banner .title {
   display: block;
-  font-size: 28px;
+  font-family: 'Knockout 31 A', 'Knockout 31 B', sans-serif;
+  font-weight: 400;
+  font-size: 39.998000000000005px;
   font-variant: small-caps;
+  letter-spacing: -1px;
+}
+.banner .navigation .nav-list li a {
+  font-family: 'Knockout 31 A', 'Knockout 31 B', sans-serif;
+  font-weight: 400;
+  font-size: 18.004px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .banner #nav-toggle {
   margin-bottom: 17.234px;
