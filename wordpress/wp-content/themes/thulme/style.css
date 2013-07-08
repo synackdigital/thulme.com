@@ -380,7 +380,7 @@ you can use the generic selector below, but it's slower:
 /* 29px */
 /* 28px */
 /* 24px */
-/* 18px */
+/* 16px */
 .inline-block {
   display: inline-block;
   zoom: 1;
@@ -490,7 +490,7 @@ h4 {
   margin-top: 4px;
 }
 p {
-  font-size: 18.004px;
+  font-size: 16.0006px;
   /* 18px */
 
   line-height: 1.722169;
@@ -7739,7 +7739,7 @@ body {
 .banner .navigation .nav-list li a {
   font-family: 'Knockout 31 A', 'Knockout 31 B', sans-serif;
   font-weight: 400;
-  font-size: 18.004px;
+  font-size: 16.0006px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
