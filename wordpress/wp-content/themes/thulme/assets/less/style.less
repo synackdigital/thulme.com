@@ -28,7 +28,9 @@ body {
 }
 .banner,
 .document {
-  .column(24);
+  .column(22);
+  .push(1);
+  .pull(1);
 }
 @media (min-width: @tabletBreakpoint) {
   .banner {
@@ -53,7 +55,7 @@ body {
 
   // Push down on big screens
   @media (min-width: @tabletBreakpoint) {
-    margin-top: (4 * @base-font-size * @base-line-height);
+    margin-top: (3 * @base-font-size * @base-line-height);
   }
 
   // Title
@@ -133,7 +135,10 @@ body {
 
   // Navigation toggle
   #nav-toggle {
-    margin-bottom: (@base-font-size * @base-line-height);
+    position: absolute;
+    top: (@base-font-size * @base-line-height);
+    right: (@base-font-size * @base-line-height);
+
     @media (min-width: @tabletBreakpoint) {
       display: none;
     }
@@ -148,6 +153,7 @@ body {
   // Spacing
   .title,
   .description {
+    margin-top: (@base-font-size * @base-line-height);
     margin-bottom: (@base-font-size * @base-line-height);
     @media (min-width: @tabletBreakpoint) {
       margin-bottom: (3.5 * @base-font-size * @base-line-height);
