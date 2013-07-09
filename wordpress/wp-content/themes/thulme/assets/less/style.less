@@ -174,103 +174,36 @@ body {
   }
   & > li a {
     border-bottom: 2px solid transparent;
-    border-top: 2px solid transparent;
     .border-radius(0);
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: white;
+    }
   }
   // About (thulme)
   & > li[class*='about'] {
     a {
       border-bottom-color: @thulme;
-
-      &:hover,
-      &:focus {
-        border-top-color: @thulme;
-        background-color: @thulme;
-        color: black;
-      }
-    }
-
-    &.active,
-    &.active,
-    &.active {
-      a,
-      a:hover,
-      a:focus {
-        background-color: @thulme;
-        color: black;
-      }
     }
   }
   // Weiji
   & > li[class*='weiji'] {
     a {
       border-bottom-color: @weiji;
-
-      &:hover,
-      &:focus {
-        border-top-color: @weiji;
-        background-color: @weiji;
-        color: white;
-      }
-    }
-
-    &.active,
-    &.active,
-    &.active {
-      a,
-      a:hover,
-      a:focus {
-        background-color: @weiji;
-        color: white;
-      }
     }
   }
   // Startup Tools
   & > li[class*='startup-tools'] {
     a {
       border-bottom-color: @startup-tools;
-
-      &:hover,
-      &:focus {
-        border-top-color: @startup-tools;
-        background-color: @startup-tools;
-        color: @deep-sea;
-      }
-    }
-
-    &.active,
-    &.active,
-    &.active {
-      a,
-      a:hover,
-      a:focus {
-        background-color: @startup-tools;
-        color: @deep-sea;
-      }
     }
   }
   // Open Design
   & > li[class*='open-design'] {
     a {
       border-bottom-color: @open-design;
-
-      &:hover,
-      &:focus {
-        border-top-color: @open-design;
-        background-color: @open-design;
-        color: @deep-sea;
-      }
-    }
-
-    &.active,
-    &.active,
-    &.active {
-      a,
-      a:hover,
-      a:focus {
-        background-color: @open-design;
-        color: @deep-sea;
-      }
     }
   }
 
