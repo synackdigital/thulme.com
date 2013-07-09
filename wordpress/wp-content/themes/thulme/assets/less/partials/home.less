@@ -1,0 +1,71 @@
+body.home {
+
+  // Extra wide document container
+  @media (min-width: @tabletBreakpoint) {
+    .document {
+      .column(17);
+      margin-top: (3 * @base-font-size * @base-line-height);
+
+      .grid-container {
+        .row(17);
+      }
+
+      // Three-col grid
+      .category-open-design,
+      .category-startup-tools {
+        .column(6, 17);
+      }
+      .category-weiji {
+        .column(5, 17);
+      }
+
+      // Article list styling
+      .category ul {
+        margin-top: (@base-font-size * @base-line-height);
+
+        li {
+          margin-bottom: (@base-font-size * @base-line-height);
+        }
+      }
+
+      // Article header styling
+      .category-name {
+        // Align with site title
+        margin-top: 11px;
+        line-height: 35px;
+      }
+      .category-description {
+        color: @concrete;
+        border-bottom: 1px solid @clouds;
+
+        margin-bottom: (2 * @base-font-size * @base-line-height);
+      }
+
+      // Colors for special categories
+      .category-open-design {
+        .category-name {
+          border-bottom: 3px solid @open-design;
+        }
+        .category-name, .category-name a {
+          color: @open-design;
+        }
+      }
+      .category-startup-tools {
+        .category-name {
+          border-bottom: 3px solid @startup-tools;
+        }
+        .category-name, .category-name a {
+          color: @startup-tools;
+        }
+      }
+      .category-weiji {
+        .category-name {
+          border-bottom: 3px solid @weiji;
+        }
+        .category-name, .category-name a {
+          color: @weiji;
+        }
+      }
+    }
+  }
+}

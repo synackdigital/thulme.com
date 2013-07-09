@@ -8,12 +8,12 @@
   position: relative;
 
   .content {
-    margin-top: (2 * @base-font-size * @base-line-height);
+    margin-top: (@base-font-size * @base-line-height);
   }
 
+  // Colored page headers on special categories
   .page-header {
-    margin-top: (4 * @base-font-size * @base-line-height);
-
+    // Weiji
     body.category-weiji & {
       color: @weiji;
 
@@ -26,6 +26,7 @@
         }
       }
     }
+    // Open Design
     body.category-open-design & {
       color: @open-design;
 
@@ -38,6 +39,7 @@
         }
       }
     }
+    // Startup Tools
     body.category-startup-tools & {
       color: @startup-tools;
 

@@ -7618,10 +7618,7 @@ body:after {
   position: relative;
 }
 .document .content {
-  margin-top: 34.468px;
-}
-.document .page-header {
-  margin-top: 68.936px;
+  margin-top: 17.234px;
 }
 body.category-weiji .document .page-header {
   color: #d13351;
@@ -7698,8 +7695,82 @@ body.archive .document .hentry header h2 {
   margin-bottom: .25em;
 }
 @media (min-width: 979px) {
+  body.home .document {
+    display: inline;
+    float: left;
+    width: 69.79166666666666%;
+    margin: 0 0.5208333333333333%;
+    margin-top: 51.702000000000005px;
+  }
+  body.home .document .grid-container {
+    display: block;
+    width: 101.47058823529412%;
+    margin: 0 -0.7352941176470588%;
+    *zoom: 1;
+  }
+  body.home .document .grid-container:before,
+  body.home .document .grid-container:after {
+    display: table;
+    content: "";
+  }
+  body.home .document .grid-container:after {
+    clear: both;
+  }
+  body.home .document .category-open-design,
+  body.home .document .category-startup-tools {
+    display: inline;
+    float: left;
+    width: 33.82352941176471%;
+    margin: 0 0.7352941176470588%;
+  }
+  body.home .document .category-weiji {
+    display: inline;
+    float: left;
+    width: 27.941176470588236%;
+    margin: 0 0.7352941176470588%;
+  }
+  body.home .document .category ul {
+    margin-top: 17.234px;
+  }
+  body.home .document .category ul li {
+    margin-bottom: 17.234px;
+  }
+  body.home .document .category-name {
+    margin-top: 11px;
+    line-height: 35px;
+  }
+  body.home .document .category-description {
+    color: #95a5a6;
+    border-bottom: 1px solid #ecf0f1;
+    margin-bottom: 34.468px;
+  }
+  body.home .document .category-open-design .category-name {
+    border-bottom: 3px solid #ebc434;
+  }
+  body.home .document .category-open-design .category-name,
+  body.home .document .category-open-design .category-name a {
+    color: #ebc434;
+  }
+  body.home .document .category-startup-tools .category-name {
+    border-bottom: 3px solid #90cc3a;
+  }
+  body.home .document .category-startup-tools .category-name,
+  body.home .document .category-startup-tools .category-name a {
+    color: #90cc3a;
+  }
+  body.home .document .category-weiji .category-name {
+    border-bottom: 3px solid #d13351;
+  }
+  body.home .document .category-weiji .category-name,
+  body.home .document .category-weiji .category-name a {
+    color: #d13351;
+  }
+}
+@media (min-width: 979px) {
   body {
     max-width: 1468.5px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .banner,
@@ -7718,13 +7789,15 @@ body.archive .document .hentry header h2 {
     width: 19.791666666666664%;
     margin: 0 0.5208333333333333%;
     margin-left: 4.687499999999999%;
+    margin-top: 51.702000000000005px;
   }
   .document {
     display: inline;
     float: left;
-    width: 48.95833333333333%;
+    width: 53.125%;
     margin: 0 0.5208333333333333%;
     margin-left: 4.687499999999999%;
+    margin-top: 51.702000000000005px;
   }
 }
 body {
@@ -7733,11 +7806,6 @@ body {
 /*
  * Header (banner)
  */
-@media (min-width: 979px) {
-  .banner {
-    margin-top: 51.702000000000005px;
-  }
-}
 .banner .title {
   display: inline-block;
   font-family: 'Knockout 31 A', 'Knockout 31 B', sans-serif;
@@ -7791,7 +7859,7 @@ body {
 .banner #nav-toggle {
   position: absolute;
   top: 17.234px;
-  right: 17.234px;
+  right: 4.687499999999999%;
 }
 @media (min-width: 979px) {
   .banner #nav-toggle {
