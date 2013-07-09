@@ -7901,29 +7901,68 @@ body {
   float: left;
   clear: left;
   margin-bottom: 17.234px;
+  position: relative;
 }
 .nav-list > li a {
-  border-bottom: 2px solid transparent;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
 .nav-list > li a:hover,
 .nav-list > li a:focus {
+  color: white;
   background-color: transparent;
+}
+.nav-list > li.active a {
+  color: #000000;
+  background-color: transparent;
+}
+.nav-list > li.active a:hover,
+.nav-list > li.active a:focus {
+  color: white;
+  background-color: transparent;
+}
+.nav-list > li a {
+  position: relative;
+  z-index: 20;
+}
+.nav-list > li:after {
+  content: ' ';
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  bottom: 2px;
+  right: -13px;
+  left: -13px;
+  height: 2px;
+  -webkit-transition: height 60ms linear;
+  -moz-transition: height 60ms linear;
+  -o-transition: height 60ms linear;
+  transition: height 60ms linear;
+  -webkit-backface-visibility: hidden;
+}
+.nav-list > li:hover:after,
+.nav-list > li.active:after {
+  height: 100%;
+}
+.nav-list > li:hover a,
+.nav-list > li.active a {
   color: white;
 }
-.nav-list > li[class*='about'] a {
-  border-bottom-color: #40e2e1;
+.nav-list > li[class*='about']:after {
+  background-color: #40e2e1;
 }
-.nav-list > li[class*='weiji'] a {
-  border-bottom-color: #d13351;
+.nav-list > li[class*='weiji']:after {
+  background-color: #d13351;
 }
-.nav-list > li[class*='startup-tools'] a {
-  border-bottom-color: #90cc3a;
+.nav-list > li[class*='startup-tools']:after {
+  background-color: #90cc3a;
 }
-.nav-list > li[class*='open-design'] a {
-  border-bottom-color: #ebc434;
+.nav-list > li[class*='open-design']:after {
+  background-color: #ebc434;
 }
 /*
  * Footer (content info)

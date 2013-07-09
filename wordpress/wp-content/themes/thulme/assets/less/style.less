@@ -171,39 +171,77 @@ body {
     float: left;
     clear: left;
     margin-bottom: (@base-font-size * @base-line-height);
-  }
-  & > li a {
-    border-bottom: 2px solid transparent;
-    .border-radius(0);
 
-    &:hover,
-    &:focus {
+    // Reset nav-list link style
+    a {
+      .border-radius(0);
+
+      &:hover,
+      &:focus {
+        color: white;
+        background-color: transparent;
+      }
+    }
+    &.active a {
+      color: @link-color;
       background-color: transparent;
+    }
+    &.active a:hover,
+    &.active a:focus {
       color: white;
+      background-color: transparent;
+    }
+
+    // Animated colors background on hover
+    position: relative;
+    a {
+      position: relative;
+      z-index: 20;
+    }
+    &:after {
+      content: ' ';
+      .hide-text();
+
+      position: absolute;
+      bottom: 2px;
+      right: -13px;
+      left: -13px;
+      height: 2px;
+
+      .transition(~"height 60ms linear");
+    }
+    &:hover,
+    &.active {
+      &:after {
+        height: 100%;
+      }
+      a {
+        color: white;
+      }
     }
   }
   // About (thulme)
   & > li[class*='about'] {
-    a {
-      border-bottom-color: @thulme;
+    &:after {
+      background-color: @thulme;
     }
   }
   // Weiji
   & > li[class*='weiji'] {
-    a {
-      border-bottom-color: @weiji;
+    &:after {
+      background-color: @weiji;
     }
   }
   // Startup Tools
   & > li[class*='startup-tools'] {
-    a {
-      border-bottom-color: @startup-tools;
+    &:after {
+      background-color: @startup-tools;
     }
   }
   // Open Design
   & > li[class*='open-design'] {
-    a {
-      border-bottom-color: @open-design;
+    &:after {
+      background-color: @open-design;
     }
   }
 
