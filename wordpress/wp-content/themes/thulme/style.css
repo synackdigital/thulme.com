@@ -430,7 +430,7 @@ a {
   -webkit-backface-visibility: hidden;
 }
 a:hover {
-  color: #2e2d33;
+  color: #2c3e50;
   text-decoration: none;
 }
 h1,
@@ -7803,6 +7803,10 @@ body.archive .document .hentry header h2 {
 }
 body {
   background-color: #fcfffc;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
 }
 /*
  * Header (banner)
