@@ -13,7 +13,7 @@
       <?php if ( has_post_format( 'video' )) : ?>
         <span class="entry-icon icon-youtube-play"></span>
       <?php else: ?>
-        <span class="entry-icon icon-file-text"></span>
+        <span class="entry-icon icon-pencil"></span>
       <?php endif; ?>
       <a href="<?php the_permalink(); ?>">
         <h2 class="entry-title"><?php the_title(); ?></h2>
