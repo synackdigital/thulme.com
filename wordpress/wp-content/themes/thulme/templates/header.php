@@ -11,6 +11,7 @@
         endif;
       ?>
     </nav>
+    <?php get_search_form(); ?>
     <nav class="nav nav-secondary" role="navigation">
       <?php
         if (has_nav_menu('secondary_navigation')) :
