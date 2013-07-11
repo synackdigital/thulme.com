@@ -7760,6 +7760,7 @@ body.archive .document .hentry header h2 {
     font-size: 23.996px;
     vertical-align: middle;
     display: inline-block;
+    margin-top: -3px;
     margin-left: -34px;
     margin-right: 4px;
     width: 26px;
