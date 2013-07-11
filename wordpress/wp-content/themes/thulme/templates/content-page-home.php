@@ -14,7 +14,9 @@
     <ul class="unstyled document">
       <?php while (have_posts()) : the_post(); ?>
       <li class="hentry">
-        <?php if ( has_post_format( 'video' )) : ?>
+        <?php if ( has_post_format( 'link' )) : ?>
+          <span class="entry-icon icon-calendar-empty"></span>
+        <?php elseif ( has_post_format( 'video' )) : ?>
           <span class="entry-icon icon-youtube-play"></span>
         <?php else: ?>
           <span class="entry-icon icon-pencil"></span>
