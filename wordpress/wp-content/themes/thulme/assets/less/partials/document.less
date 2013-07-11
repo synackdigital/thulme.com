@@ -68,6 +68,29 @@
 
   .hentry {
 
+    // Entry icons
+    .entry-icon {
+      color: @concrete;
+      text-decoration: none;
+
+      body.archive & {
+        .pull-right();
+        font-size: @h2;
+      }
+
+      .category-open-design & {
+        color: @open-design;
+      }
+
+      .category-startup-tools & {
+        color: @startup-tools;
+      }
+
+      .category-weiji & {
+        color: @weiji;
+      }
+    }
+
     // Entry headers
     header {
       margin-bottom: (3 * @base-font-size * @base-line-height);

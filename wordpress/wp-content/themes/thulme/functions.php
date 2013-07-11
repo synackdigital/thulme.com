@@ -41,6 +41,9 @@ function thulme_setup() {
   register_nav_menus(array(
     'secondary_navigation' => __('Secondary Navigation', 'thulme'),
   ));
+
+  // Register support for post formats
+  add_theme_support( 'post-formats', array( 'video' ) );
 }
 add_action('after_setup_theme', 'thulme_setup');
 
