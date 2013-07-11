@@ -7754,12 +7754,15 @@ body.archive .document .hentry header h2 {
     margin-bottom: 17.234px;
   }
   body.home .document .hentry {
-    padding-left: 20px;
+    padding-left: 34px;
   }
   body.home .document .hentry .entry-icon {
-    margin-left: -20px;
-    margin-right: 5px;
-    width: 20px;
+    font-size: 23.996px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: -34px;
+    margin-right: 4px;
+    width: 26px;
   }
   body.home .document .category-name {
     margin-top: 11px;
