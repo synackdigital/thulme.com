@@ -1,4 +1,7 @@
 <?php
+
+require_once locate_template('/lib/post-format-plural-strings.php');
+
 /**
  * Enqueue scripts and stylesheets
  */
