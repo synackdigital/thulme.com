@@ -7989,6 +7989,9 @@ a:focus {
 .nav-list > li.active a {
   color: white;
 }
+.nav-list > li:after {
+  background-color: #2e2d33;
+}
 .nav-list > li[class*='about']:after {
   background-color: #40e2e1;
 }
