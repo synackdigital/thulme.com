@@ -16,7 +16,7 @@
       <ul id="menu-types" class="nav nav-list">
         <li class="menu-type-link"><a href="<?php echo get_post_format_link( 'link' ); ?>"><span class="icon-calendar-empty"></span> Decks</a></li>
         <li class="menu-type-video"><a href="<?php echo get_post_format_link( 'video' ); ?>"><span class="icon-youtube-play"></span> Videos</a></li>
-        <li class="menu-type-video"><a href="<?php echo get_post_format_link( 'audio' ); ?>"><span class="icon-volume-up"></span> Radio</a></li>
+        <li class="menu-type-video"><a href="<?php echo get_post_format_link( 'audio' ); ?>"><span class="icon-volume-up"></span> Audio</a></li>
       </ul>
       <?php
         if (has_nav_menu('secondary_navigation')) :
