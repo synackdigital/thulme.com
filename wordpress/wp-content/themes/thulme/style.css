@@ -7915,6 +7915,9 @@ a:focus {
     display: none;
   }
 }
+.banner #searchform {
+  margin-bottom: 34.468px;
+}
 .banner #searchsubmit {
   display: none;
 }
