@@ -2798,9 +2798,9 @@ input.search-query {
   padding-right: 6px;
   padding-left: 6px;
   margin-bottom: 0;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 /* Allow for input prepend/append in search forms */
 .form-search .input-append .search-query,
