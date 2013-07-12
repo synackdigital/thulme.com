@@ -7754,16 +7754,13 @@ body.archive .document .hentry header h2 {
     margin-bottom: 17.234px;
   }
   body.home .document .hentry {
-    padding-left: 34px;
+    padding-left: 29px;
   }
   body.home .document .hentry .entry-icon {
-    font-size: 23.996px;
-    vertical-align: middle;
     display: inline-block;
-    margin-top: -3px;
-    margin-left: -34px;
+    margin-left: -29px;
     margin-right: 4px;
-    width: 26px;
+    width: 20px;
   }
   body.home .document .category-name {
     margin-top: 11px;
