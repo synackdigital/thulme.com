@@ -12,6 +12,8 @@
     <header>
       <?php if ( has_post_format( 'link' )) : ?>
         <span class="entry-icon icon-calendar-empty"></span>
+      <?php elseif ( has_post_format( 'audio' )) : ?>
+        <span class="entry-icon icon-volume-up"></span>
       <?php elseif ( has_post_format( 'video' )) : ?>
         <span class="entry-icon icon-youtube-play"></span>
       <?php else: ?>

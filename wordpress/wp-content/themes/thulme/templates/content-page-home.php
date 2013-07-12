@@ -18,6 +18,8 @@
           <span class="entry-icon icon-calendar-empty"></span>
         <?php elseif ( has_post_format( 'video' )) : ?>
           <span class="entry-icon icon-youtube-play"></span>
+        <?php elseif ( has_post_format( 'audio' )) : ?>
+          <span class="entry-icon icon-volume-up"></span>
         <?php else: ?>
           <span class="entry-icon icon-pencil"></span>
         <?php endif; ?>
