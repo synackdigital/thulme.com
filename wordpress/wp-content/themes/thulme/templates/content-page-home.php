@@ -6,7 +6,7 @@
 
 <div class="grid-container">
   <?php // Open Design posts
-    query_posts('category_name=open-design&posts_per_page=10');
+    query_posts('category_name=open-design&posts_per_page=7');
     if (have_posts()) : ?>
   <section class="category category-open-design">
     <h2 class="category-name"><a href="<?php echo get_category_link( $category_open_design->term_id ); ?>" title="Show all posts in <?php echo $category_open_design->name; ?>"><?php echo $category_open_design->name; ?></a></h2>
@@ -26,12 +26,13 @@
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </li>
       <?php endwhile; ?>
+      <li class="more"><a href="<?php echo get_category_link( $category_open_design->term_id ); ?>" title="Show all posts in <?php echo $category_open_design->name; ?>">More in <?php echo $category_open_design->name; ?></a></li>
     </ul>
   </section>
   <?php endif; ?>
 
   <?php // Startup Tools posts
-    query_posts('category_name=startup-tools&posts_per_page=10');
+    query_posts('category_name=startup-tools&posts_per_page=7');
     if (have_posts()) : ?>
   <section class="category category-startup-tools">
     <h2 class="category-name"><a href="<?php echo get_category_link( $category_startup_tools->term_id ); ?>" title="Show all posts in <?php echo $category_startup_tools->name; ?>"><?php echo $category_startup_tools->name; ?></a></h2>
@@ -47,12 +48,13 @@
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </li>
       <?php endwhile; ?>
+      <li class="more"><a href="<?php echo get_category_link( $category_startup_tools->term_id ); ?>" title="Show all posts in <?php echo $category_startup_tools->name; ?>">More in <?php echo $category_startup_tools->name; ?></a></li>
     </ul>
   </section>
   <?php endif; ?>
 
   <?php // Weiji posts
-    query_posts('category_name=weiji&posts_per_page=5');
+    query_posts('category_name=weiji&posts_per_page=7');
     if (have_posts()) : ?>
   <section class="category category-weiji">
     <h2 class="category-name"><a href="<?php echo get_category_link( $category_weiji->term_id ); ?>" title="Show all posts in <?php echo $category_weiji->name; ?>"><?php echo $category_weiji->name; ?></a></h2>
@@ -68,6 +70,7 @@
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </li>
       <?php endwhile; ?>
+      <li class="more"><a href="<?php echo get_category_link( $category_weiji->term_id ); ?>" title="Show all posts in <?php echo $category_weiji->name; ?>">More in <?php echo $category_weiji->name; ?></a></li>
     </ul>
   </section>
   <?php endif; ?>

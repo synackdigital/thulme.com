@@ -7762,6 +7762,18 @@ body.archive .document .hentry header h2 {
     margin-right: 4px;
     width: 20px;
   }
+  body.home .document .more {
+    padding-left: 29px;
+  }
+  body.home .document .category-open-design .more a {
+    color: #ebc434;
+  }
+  body.home .document .category-startup-tools .more a {
+    color: #90cc3a;
+  }
+  body.home .document .category-weiji .more a {
+    color: #d13351;
+  }
   body.home .document .category-name {
     margin-top: 11px;
     line-height: 35px;
