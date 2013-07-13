@@ -14,9 +14,9 @@
     <?php get_search_form(); ?>
     <nav class="nav nav-secondary" role="navigation">
       <ul id="menu-types" class="nav nav-list">
-        <li class="menu-type-link"><a href="<?php echo get_post_format_link( 'link' ); ?>"><span class="icon-calendar-empty"></span> <?php echo post_format_get_plural_string( 'link' ); ?></a></li>
-        <li class="menu-type-video"><a href="<?php echo get_post_format_link( 'video' ); ?>"><span class="icon-youtube-play"></span> <?php echo post_format_get_plural_string( 'video' ); ?></a></li>
-        <li class="menu-type-video"><a href="<?php echo get_post_format_link( 'audio' ); ?>"><span class="icon-volume-up"></span> <?php echo post_format_get_plural_string( 'audio' ); ?></a></li>
+        <li class="menu-type-link"><a href="<?php echo get_post_format_link( 'link' ); ?>"><span class="icon-calendar-empty" aria-hidden="true"></span> <?php echo post_format_get_plural_string( 'link' ); ?></a></li>
+        <li class="menu-type-video"><a href="<?php echo get_post_format_link( 'video' ); ?>"><span class="icon-youtube-play" aria-hidden="true"></span> <?php echo post_format_get_plural_string( 'video' ); ?></a></li>
+        <li class="menu-type-video"><a href="<?php echo get_post_format_link( 'audio' ); ?>"><span class="icon-volume-up" aria-hidden="true"></span> <?php echo post_format_get_plural_string( 'audio' ); ?></a></li>
       </ul>
       <?php
         if (has_nav_menu('secondary_navigation')) :

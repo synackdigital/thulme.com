@@ -11,13 +11,13 @@
   <article <?php post_class(); ?>>
     <header>
       <?php if ( has_post_format( 'link' )) : ?>
-        <span class="entry-icon icon-calendar-empty"></span>
+        <span class="entry-icon icon-calendar-empty" aria-hidden="true"></span>
       <?php elseif ( has_post_format( 'audio' )) : ?>
-        <span class="entry-icon icon-volume-up"></span>
+        <span class="entry-icon icon-volume-up" aria-hidden="true"></span>
       <?php elseif ( has_post_format( 'video' )) : ?>
-        <span class="entry-icon icon-youtube-play"></span>
+        <span class="entry-icon icon-youtube-play" aria-hidden="true"></span>
       <?php else: ?>
-        <span class="entry-icon icon-pencil"></span>
+        <span class="entry-icon icon-pencil" aria-hidden="true"></span>
       <?php endif; ?>
       <a href="<?php the_permalink(); ?>">
         <h2 class="entry-title"><?php the_title(); ?></h2>
