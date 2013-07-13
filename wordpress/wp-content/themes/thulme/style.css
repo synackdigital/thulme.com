@@ -7086,7 +7086,7 @@ a .icon-flip-vertical:before {
   content: "\f0da";
 }
 .icon-columns:before {
-  content: 24;
+  content: 25;
 }
 .icon-sort:before {
   content: "\f0dc";
@@ -7716,14 +7716,14 @@ body.archive .document .hentry header h2 {
   body.home .document {
     display: inline;
     float: left;
-    width: 69.79166666666666%;
-    margin: 0 0.5208333333333333%;
+    width: 71%;
+    margin: 0 0.5%;
     margin-top: 51.702000000000005px;
   }
   body.home .document .grid-container {
     display: block;
-    width: 101.47058823529412%;
-    margin: 0 -0.7352941176470588%;
+    width: 101.38888888888889%;
+    margin: 0 -0.6944444444444444%;
     *zoom: 1;
   }
   body.home .document .grid-container:before,
@@ -7735,17 +7735,12 @@ body.archive .document .hentry header h2 {
     clear: both;
   }
   body.home .document .category-open-design,
-  body.home .document .category-startup-tools {
-    display: inline;
-    float: left;
-    width: 33.82352941176471%;
-    margin: 0 0.7352941176470588%;
-  }
+  body.home .document .category-startup-tools,
   body.home .document .category-weiji {
     display: inline;
     float: left;
-    width: 27.941176470588236%;
-    margin: 0 0.7352941176470588%;
+    width: 31.944444444444443%;
+    margin: 0 0.6944444444444444%;
   }
   body.home .document .category ul {
     margin-top: 0;
@@ -7816,26 +7811,26 @@ body.archive .document .hentry header h2 {
 .document {
   display: inline;
   float: left;
-  width: 90.625%;
-  margin: 0 0.5208333333333333%;
-  margin-left: 4.687499999999999%;
-  margin-right: 4.687499999999999%;
+  width: 91%;
+  margin: 0 0.5%;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
 }
 @media (min-width: 979px) {
   .banner {
     display: inline;
     float: left;
-    width: 19.791666666666664%;
-    margin: 0 0.5208333333333333%;
-    margin-left: 4.687499999999999%;
+    width: 19%;
+    margin: 0 0.5%;
+    margin-left: 4.5%;
     margin-top: 51.702000000000005px;
   }
   .document {
     display: inline;
     float: left;
-    width: 53.125%;
-    margin: 0 0.5208333333333333%;
-    margin-left: 4.687499999999999%;
+    width: 43%;
+    margin: 0 0.5%;
+    margin-left: 4.5%;
     margin-top: 51.702000000000005px;
   }
 }
@@ -7849,7 +7844,7 @@ a:focus {
 /*
  * Header (banner)
  */
-.banner .title {
+.banner .brand {
   display: inline-block;
   font-family: 'Knockout 31 A', 'Knockout 31 B', sans-serif;
   font-weight: 400;
@@ -7862,7 +7857,7 @@ a:focus {
   /* Animate border on hover */
 
 }
-.banner .title:after {
+.banner .brand:after {
   background: -webkit-gradient(linear, left, right, color-stop(0%, #40e2e1), color-stop(25%, #40e2e1), color-stop(25%, #ebc434), color-stop(50%, #ebc434), color-stop(50%, #90cc3a), color-stop(75%, #90cc3a), color-stop(75%, #d13351), color-stop(100%, #d13351));
   background: -webkit-linear-gradient(left, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
   background: -moz-linear-gradient(left, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
@@ -7881,16 +7876,31 @@ a:focus {
   left: 0;
   height: 3px;
 }
-.banner .title:after {
+.banner .brand:after {
   -webkit-transition: height 120ms ease-in-out;
   -moz-transition: height 120ms ease-in-out;
   -o-transition: height 120ms ease-in-out;
   transition: height 120ms ease-in-out;
   -webkit-backface-visibility: hidden;
 }
-.banner .title:hover:after,
-.banner .title:focus:after {
+.banner .brand:hover:after,
+.banner .brand:focus:after {
   height: 100%;
+}
+.banner .title {
+  position: relative;
+  z-index: 20;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-transition: color 90ms linear;
+  -moz-transition: color 90ms linear;
+  -o-transition: color 90ms linear;
+  transition: color 90ms linear;
+  -webkit-backface-visibility: hidden;
+}
+.banner .title:hover {
+  color: white;
+  text-decoration: none;
 }
 .banner .navigation .nav-list li a {
   font-family: 'Knockout 31 A', 'Knockout 31 B', sans-serif;
@@ -7921,13 +7931,13 @@ a:focus {
 .banner #searchsubmit {
   display: none;
 }
-.banner .title,
+.banner .brand,
 .banner .description {
   margin-top: 17.234px;
   margin-bottom: 17.234px;
 }
 @media (min-width: 979px) {
-  .banner .title,
+  .banner .brand,
   .banner .description {
     margin-bottom: 60.319px;
   }

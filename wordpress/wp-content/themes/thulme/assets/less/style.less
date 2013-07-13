@@ -32,7 +32,7 @@ body {
 }
 .banner,
 .document {
-  .column(22);
+  .column(23);
   .push(1);
   .pull(1);
 }
@@ -43,10 +43,11 @@ body {
     margin-top: (3 * @base-font-size * @base-line-height);
   }
   .document {
-    .column(13);
+    .column(11);
     .push(1);
     margin-top: (3 * @base-font-size * @base-line-height);
   }
+  // 7 cols left
 }
 
 // Background color
@@ -65,8 +66,8 @@ a:focus {
  */
 .banner {
 
-  // Title
-  .title {
+  // Brand
+  .brand {
     display: inline-block;
 
     font-family: @alt-font-family;
@@ -130,6 +131,18 @@ a:focus {
       }
     }
   }
+  .title {
+    position: relative;
+    z-index: 20;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .transition(~"color 90ms linear");
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
 
   // Navigation
   .navigation .nav-list li a {
@@ -166,7 +179,7 @@ a:focus {
   }
 
   // Spacing
-  .title,
+  .brand,
   .description {
     margin-top: (@base-font-size * @base-line-height);
     margin-bottom: (@base-font-size * @base-line-height);
