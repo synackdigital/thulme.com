@@ -7855,6 +7855,26 @@ body:after {
 .document .content {
   margin-top: 17.234px;
 }
+.document .alignright,
+.document .alignleft {
+  margin-bottom: 17.234px;
+  max-width: 45%;
+  height: auto;
+}
+.document .alignright {
+  float: right;
+  margin-left: 34.468px;
+  margin-right: -5%;
+}
+.document .alignleft {
+  float: left;
+  margin-right: 34.468px;
+}
+.document .aligncenter {
+  max-width: 110%;
+  margin-left: -5%;
+  margin-right: -5%;
+}
 body.category-weiji .document .page-header {
   color: #d13351;
 }

@@ -11,6 +11,28 @@
     margin-top: (@base-font-size * @base-line-height);
   }
 
+  // Alignment classes from Wordpress
+  .alignright,
+  .alignleft {
+    margin-bottom: (@base-font-size * @base-line-height);
+    max-width: 45%;
+    height: auto;
+  }
+  .alignright {
+    float: right;
+    margin-left: (2 * @base-font-size * @base-line-height);
+    margin-right: -5%;
+  }
+  .alignleft {
+    float: left;
+    margin-right: (2 * @base-font-size * @base-line-height);
+  }
+  .aligncenter {
+    max-width: 110%;
+    margin-left: -5%;
+    margin-right: -5%;
+  }
+
   // Colored page headers on special categories
   .page-header {
     // Weiji
