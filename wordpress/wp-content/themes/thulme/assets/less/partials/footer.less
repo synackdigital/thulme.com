@@ -1,0 +1,68 @@
+//
+// Footer (.content-info) styles
+// --------------------------------------------------
+
+.content-info {
+
+  .twitter-feed {
+    margin-top: (3 * @base-font-size * @base-line-height);
+    margin-top: (2 * @base-font-size * @base-line-height);
+  }
+
+  .widget_twitter {
+    background-color: @deep-sea;
+    color: @stockholm;
+    .border-radius(3px);
+
+    // Grid
+    > div {
+      .row(23);
+    }
+    .widgettitle {
+      .column(2);
+      margin-top: 8px;
+      padding-left: 10px;
+    }
+    .looper {
+      .column(21);
+      .push(1);
+    }
+    .looper-inner {
+      margin: 0;
+    }
+    .follow-button,
+    .entry-meta,
+    .intent-meta {
+      display: none;
+    }
+
+    // Typography
+    .widgettitle {
+      font-size: @h6;
+      font-family: @alt-font-family;
+      font-weight: @alt-font-weight;
+    }
+    .item {
+      min-height: 40px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+
+      .entry-content {
+        display: table-cell;
+        vertical-align: middle;
+        height: 40px;
+      }
+    }
+    a {
+      color: white;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    // Only show when javascript has been loaded
+    display: none;
+  }
+}

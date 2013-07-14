@@ -1,4 +1,5 @@
 <footer class="content-info" role="contentinfo">
+
   <?php include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); ?>
   <?php if ( is_plugin_active('twitter-widget-pro/wp-twitter-widget.php') ) : ?>
   <section class="twitter-feed">
@@ -11,6 +12,7 @@
     ); ?>
   </section>
   <?php endif; ?>
+
 </footer>
 
 <?php wp_footer(); ?>
