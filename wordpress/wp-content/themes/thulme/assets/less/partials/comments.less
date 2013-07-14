@@ -1,0 +1,79 @@
+//
+// Comment styling
+// --------------------------------------------------
+
+#comments {
+  border-top: 1px solid @silver;
+
+  margin-top: (2 * @base-font-size * @base-line-height);
+  margin-bottom: (2 * @base-font-size * @base-line-height);
+  padding-top: (2 * @base-font-size * @base-line-height);
+
+  > h3 {
+    margin-bottom: (2 * @base-font-size * @base-line-height);
+    margin-left: 74px;
+
+    font-size: @h6;
+  }
+}
+
+#comments .media-list {
+
+  margin-top: (2 * @base-font-size * @base-line-height);
+  margin-bottom: (2 * @base-font-size * @base-line-height);
+
+  li {
+    margin-top: (2 * @base-font-size * @base-line-height);
+    margin-bottom: (2 * @base-font-size * @base-line-height);
+  }
+  h4 {
+    font-size: @p;
+    display: inline;
+  }
+  p {
+    font-size: @base-font-size;
+  }
+  time a,
+  .comment-edit-link {
+    color: @concrete;
+    font-size: @small;
+  }
+
+  // Pingbacks
+  .pingback {
+    background-color: @clouds;
+    .border-radius(3px);
+
+    margin-top: (@base-font-size * @base-line-height);
+    margin-bottom: (@base-font-size * @base-line-height);
+    margin-left: 74px;
+    padding: 0 3px;
+
+    time,
+    p {
+      display: none;
+    }
+  }
+}
+
+#respond {
+  border-top: 1px solid @silver;
+
+  margin-top: (2 * @base-font-size * @base-line-height);
+  margin-bottom: (2 * @base-font-size * @base-line-height);
+  margin-left: 74px;
+  padding-top: (2 * @base-font-size * @base-line-height);
+}
+
+.comment-reply-link {
+  color: @belize-hole;
+
+  visibility: hidden;
+
+  font-weight: bold;
+
+  .comment:hover &,
+  .comment:focus & {
+    visibility: visible;
+  }
+}
