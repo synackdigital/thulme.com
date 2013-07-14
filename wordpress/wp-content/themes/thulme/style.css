@@ -382,6 +382,7 @@ you can use the generic selector below, but it's slower:
 /* 28px */
 /* 24px */
 /* 16px */
+/* 12px */
 .inline-block {
   display: inline-block;
   zoom: 1;
@@ -8124,6 +8125,50 @@ body.archive .document .hentry header h2 {
 .content-info .widget_twitter a:hover,
 .content-info .widget_twitter a:focus {
   text-decoration: underline;
+}
+#comments {
+  border-top: 1px solid #bdc3c7;
+  margin-top: 34.468px;
+  margin-bottom: 34.468px;
+  padding-top: 34.468px;
+}
+#comments > h3 {
+  margin-bottom: 34.468px;
+  font-size: 23.996px;
+}
+#comments .media-list {
+  margin-top: 34.468px;
+  margin-bottom: 34.468px;
+}
+#comments .media-list li {
+  margin-top: 34.468px;
+  margin-bottom: 34.468px;
+}
+#comments .media-list h4 {
+  font-size: 16.0006px;
+  display: inline;
+}
+#comments .media-list p {
+  font-size: 14px;
+}
+#comments .media-list time a,
+#comments .media-list .comment-edit-link {
+  color: #95a5a6;
+  font-size: 11.9994px;
+}
+#comments .media-list .pingback {
+  background-color: #ecf0f1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-top: 17.234px;
+  margin-bottom: 17.234px;
+  margin-left: 74px;
+  padding: 0 3px;
+}
+#comments .media-list .pingback time,
+#comments .media-list .pingback p {
+  display: none;
 }
 @media (min-width: 979px) {
   body {
