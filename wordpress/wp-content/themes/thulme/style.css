@@ -8134,6 +8134,7 @@ body.archive .document .hentry header h2 {
 }
 #comments > h3 {
   margin-bottom: 34.468px;
+  margin-left: 74px;
   font-size: 23.996px;
 }
 #comments .media-list {
@@ -8169,6 +8170,22 @@ body.archive .document .hentry header h2 {
 #comments .media-list .pingback time,
 #comments .media-list .pingback p {
   display: none;
+}
+#respond {
+  border-top: 1px solid #bdc3c7;
+  margin-top: 34.468px;
+  margin-bottom: 34.468px;
+  margin-left: 74px;
+  padding-top: 34.468px;
+}
+.comment-reply-link {
+  color: #2980b9;
+  visibility: hidden;
+  font-weight: bold;
+}
+.comment:hover .comment-reply-link,
+.comment:focus .comment-reply-link {
+  visibility: visible;
 }
 @media (min-width: 979px) {
   body {
