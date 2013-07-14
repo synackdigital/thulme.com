@@ -24,6 +24,9 @@ function thulme_scripts() {
   wp_enqueue_script('jquery-placeholder', get_stylesheet_directory_uri() . '/assets/js/vendor/jquery.placeholder.js', array('jquery'), null, true);
   wp_enqueue_script('jquery-stacktable', get_stylesheet_directory_uri() . '/assets/js/vendor/jquery.stacktable.js', array('jquery'), null, true);
 
+  // Enqueue Looper
+  wp_enqueue_script('jquery-looper', get_stylesheet_directory_uri() . '/assets/js/vendor/looper.js', array('jquery'), null, true);
+
   // Enqueue font styles from Typography.com
   wp_enqueue_style('typography_com', '//cloud.typography.com/7770232/774582/css/fonts.css', false, null);
 

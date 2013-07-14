@@ -7,20 +7,20 @@
   Version:        0.1.0
 */
 
-// Flat UI
+// Libs
 @import "flat-ui/flat-ui";
-
-// Font Awesome
 @import "font-awesome/font-awesome";
+@import "looper";
 
-// Theme settings
+// Settings
 @import "config";
 @import "mixins";
 @import "grid";
 
-// Theme partials
+// Partials
 @import "partials/document";
 @import "partials/home";
+@import "partials/footer";
 
 // Basic responsive grid
 body {
@@ -31,7 +31,8 @@ body {
   }
 }
 .banner,
-.document {
+.document,
+.content-info {
   .column(23);
   .push(1);
   .pull(1);
@@ -280,11 +281,3 @@ a:focus {
   }
 
 }
-
-/*
- * Footer (content info)
- */
-.content-info {
-  border-top: 1px solid @silver;
-}
-
