@@ -8057,7 +8057,7 @@ body.archive .document .hentry header h2 {
 }
 .content-info {
   padding-bottom: 51.702000000000005px;
-  padding-top: 68.936px;
+  padding-top: 34.468px;
 }
 .content-info section {
   margin-bottom: 17.234px;
@@ -8420,7 +8420,8 @@ a:focus {
  * Social icons
  */
 .banner .social-icons a {
-  margin-right: 1em;
+  margin-right: .75em;
+  font-size: 16.0006px;
 }
 .icon-google-plus-sign {
   color: #e5473e;

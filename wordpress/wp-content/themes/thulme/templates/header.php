@@ -27,9 +27,9 @@
   </div>
   <!-- <div class="description"><?php bloginfo('description'); ?></div> -->
   <aside class="social-icons">
-    <a href="https://plus.google.com/117088670109765988183/" target="_blank"><i class="icon-google-plus-sign icon-2x"></i></a>
-    <a href="https://twitter.com/thulme" target="_blank"><i class="icon-twitter icon-2x"></i></a>
-    <a href="https://uk.linkedin.com/in/thulme" target="_blank"><i class="icon-linkedin icon-2x"></i></a>
-    <a href="http://instagram.com/thulme" target="_blank"><i class="icon-instagram icon-2x"></i></a>
+    <a href="https://plus.google.com/117088670109765988183/" target="_blank"><i class="icon-google-plus-sign"></i></a>
+    <a href="https://twitter.com/thulme" target="_blank"><i class="icon-twitter"></i></a>
+    <a href="https://uk.linkedin.com/in/thulme" target="_blank"><i class="icon-linkedin"></i></a>
+    <a href="http://instagram.com/thulme" target="_blank"><i class="icon-instagram"></i></a>
   </aside>
 </header>
