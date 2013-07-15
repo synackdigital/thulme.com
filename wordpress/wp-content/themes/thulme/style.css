@@ -915,15 +915,15 @@ a.muted:focus {
   background-color: #c93f10;
 }
 .btn-social-googleplus {
-  background-color: #2d2d2d;
+  background-color: #e5473e;
 }
 .btn-social-googleplus:hover,
 .btn-social-googleplus:focus {
-  background-color: #575757;
+  background-color: #ea6c65;
 }
 .btn-social-googleplus:active,
 .btn-social-googleplus.active {
-  background-color: #262626;
+  background-color: #c33c35;
 }
 .btn-social-facebook {
   background-color: #2f4b93;
@@ -8415,4 +8415,22 @@ a:focus {
 }
 .nav-list > li[class*='open-design']:after {
   background-color: #ebc434;
+}
+/*
+ * Social icons
+ */
+.banner .social-icons a {
+  margin-right: 1em;
+}
+.icon-google-plus-sign {
+  color: #e5473e;
+}
+.icon-twitter {
+  color: #00bdef;
+}
+.icon-linkedin {
+  color: #0072b5;
+}
+.icon-instagram {
+  color: #aa7e63;
 }

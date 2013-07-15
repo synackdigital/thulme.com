@@ -10,29 +10,9 @@
       )
     ); ?>
   </section>
-  <section class="social-buttons">
-    <a href="https://plus.google.com/117088670109765988183/" class="btn btn-small btn-social-googleplus" target="_blank">
-      <i class="fui-googleplus"></i>
-      Connect with Google
-    </a>
-    <a href="https://twitter.com/thulme" class="btn btn-small btn-social-twitter" target="_blank">
-      <i class="fui-twitter"></i>
-      Connect with Twitter
-    </a>
-    <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php bloginfo('url') ?>&title=<?php bloginfo('name') ?>&summary=<?php bloginfo('description') ?>" class="btn btn-small btn-social-linkedin" target="_blank">
-      <i class="fui-linkedin"></i>
-      Share
-      <span class="btn-tip"></span>
-    </a>
-  </section>
   <?php endif; ?>
 
 </footer>
 
-
-<script type="text/javascript" src="http://platform.linkedin.com/in.js">
-    api_key:  gis5y1iugtrv
-    onLoad:   INCallback
-</script>
 
 <?php wp_footer(); ?>

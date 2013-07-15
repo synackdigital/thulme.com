@@ -12,9 +12,3 @@ $(function(){
   $('.widget_twitter .looper').looper('to', 1);
   $('.content-info .widget_twitter').show();
 });
-
-function INCallback() {
-  IN.Tags.Share.getCount("http://thulme.com", function(count){
-    $('.content-info .social-buttons .btn-social-linkedin .btn-tip').html(count);
-  });
-}
