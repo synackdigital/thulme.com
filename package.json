@@ -4,7 +4,6 @@
   "description": "Wordpress based website at thulme.com",
   "dependencies": {},
   "devDependencies": {
-    "grunt-ftp-deploy": "0.0.9",
     "grunt": "~0.4.1",
     "grunt-contrib-less": "~0.6.0",
     "less": "~1.4.0",
