@@ -8055,9 +8055,12 @@ body.archive .document .hentry header h2 {
     color: #d13351;
   }
 }
-.content-info .twitter-feed {
-  margin-top: 68.936px;
-  margin-bottom: 51.702000000000005px;
+.content-info {
+  padding-bottom: 51.702000000000005px;
+  padding-top: 68.936px;
+}
+.content-info section {
+  margin-bottom: 17.234px;
 }
 .content-info .widget_twitter {
   background-color: #2e2d33;
