@@ -8321,6 +8321,20 @@ a:focus {
 .banner #searchsubmit {
   display: none;
 }
+.banner #searchform .search-query {
+  width: 12em;
+  -webkit-transition: width 90ms ease-in-out, border-color 90ms linear;
+  -moz-transition: width 90ms ease-in-out, border-color 90ms linear;
+  -o-transition: width 90ms ease-in-out, border-color 90ms linear;
+  transition: width 90ms ease-in-out, border-color 90ms linear;
+  -webkit-backface-visibility: hidden;
+}
+.banner #searchform .search-query:focus {
+  width: 16em;
+}
+.banner #searchform .search-query:hover {
+  border-color: #1abc9c;
+}
 .banner .brand,
 .banner .description {
   margin-top: 17.234px;

@@ -179,6 +179,16 @@ a:focus {
   #searchsubmit {
     display: none;
   }
+  #searchform .search-query {
+    width: 12em;
+    .transition(~"width 90ms ease-in-out, border-color 90ms linear");
+    &:focus {
+      width: 16em;
+    }
+    &:hover {
+      border-color: @firm;
+    }
+  }
 
   // Spacing
   .brand,
