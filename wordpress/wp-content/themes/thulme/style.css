@@ -8240,7 +8240,7 @@ a:focus {
   font-weight: 400;
   font-size: 39.998000000000005px;
   font-variant: small-caps;
-  letter-spacing: -1px;
+  text-rendering: auto;
   /* Striped pseudo-border */
 
   position: relative;
