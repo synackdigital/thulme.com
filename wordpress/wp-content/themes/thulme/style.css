@@ -7970,6 +7970,9 @@ body.archive .document .hentry header {
 body.archive .document .hentry header h2 {
   margin-bottom: .25em;
 }
+.document #comments .alert {
+  display: none;
+}
 body.home .category-open-design,
 body.home .category-startup-tools,
 body.home .category-weiji {
