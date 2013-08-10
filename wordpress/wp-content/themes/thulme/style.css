@@ -7970,6 +7970,21 @@ body.archive .document .hentry header {
 body.archive .document .hentry header h2 {
   margin-bottom: .25em;
 }
+body.home .category-open-design,
+body.home .category-startup-tools,
+body.home .category-weiji {
+  display: inline;
+  float: left;
+  width: 71%;
+  margin: 0 0.5%;
+}
+body.home .category ul {
+  margin-top: 0;
+  margin-bottom: 17.234px;
+}
+body.home .category ul li {
+  margin-bottom: 17.234px;
+}
 @media (min-width: 979px) {
   body.home .document {
     display: inline;
@@ -7999,12 +8014,6 @@ body.archive .document .hentry header h2 {
     float: left;
     width: 31.944444444444443%;
     margin: 0 0.6944444444444444%;
-  }
-  body.home .document .category ul {
-    margin-top: 0;
-  }
-  body.home .document .category ul li {
-    margin-bottom: 17.234px;
   }
   body.home .document .hentry {
     padding-left: 29px;
