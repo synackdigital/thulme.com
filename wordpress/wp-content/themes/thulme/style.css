@@ -7985,6 +7985,57 @@ body.home .category ul {
 body.home .category ul li {
   margin-bottom: 17.234px;
 }
+body.home .hentry {
+  padding-left: 29px;
+}
+body.home .hentry .entry-icon {
+  display: inline-block;
+  margin-left: -29px;
+  margin-right: 4px;
+  width: 20px;
+}
+body.home .category-name {
+  margin-top: 11px;
+  line-height: 35px;
+}
+body.home .category-description {
+  color: #95a5a6;
+  border-bottom: 1px solid #ecf0f1;
+  margin-bottom: 34.468px;
+}
+body.home .category-open-design .category-name {
+  border-bottom: 3px solid #ebc434;
+}
+body.home .category-open-design .category-name,
+body.home .category-open-design .category-name a {
+  color: #ebc434;
+}
+body.home .category-startup-tools .category-name {
+  border-bottom: 3px solid #90cc3a;
+}
+body.home .category-startup-tools .category-name,
+body.home .category-startup-tools .category-name a {
+  color: #90cc3a;
+}
+body.home .category-weiji .category-name {
+  border-bottom: 3px solid #d13351;
+}
+body.home .category-weiji .category-name,
+body.home .category-weiji .category-name a {
+  color: #d13351;
+}
+body.home .more {
+  padding-left: 29px;
+}
+body.home .category-open-design .more a {
+  color: #ebc434;
+}
+body.home .category-startup-tools .more a {
+  color: #90cc3a;
+}
+body.home .category-weiji .more a {
+  color: #d13351;
+}
 @media (min-width: 979px) {
   body.home .document {
     display: inline;
@@ -8014,57 +8065,6 @@ body.home .category ul li {
     float: left;
     width: 31.944444444444443%;
     margin: 0 0.6944444444444444%;
-  }
-  body.home .document .hentry {
-    padding-left: 29px;
-  }
-  body.home .document .hentry .entry-icon {
-    display: inline-block;
-    margin-left: -29px;
-    margin-right: 4px;
-    width: 20px;
-  }
-  body.home .document .more {
-    padding-left: 29px;
-  }
-  body.home .document .category-open-design .more a {
-    color: #ebc434;
-  }
-  body.home .document .category-startup-tools .more a {
-    color: #90cc3a;
-  }
-  body.home .document .category-weiji .more a {
-    color: #d13351;
-  }
-  body.home .document .category-name {
-    margin-top: 11px;
-    line-height: 35px;
-  }
-  body.home .document .category-description {
-    color: #95a5a6;
-    border-bottom: 1px solid #ecf0f1;
-    margin-bottom: 34.468px;
-  }
-  body.home .document .category-open-design .category-name {
-    border-bottom: 3px solid #ebc434;
-  }
-  body.home .document .category-open-design .category-name,
-  body.home .document .category-open-design .category-name a {
-    color: #ebc434;
-  }
-  body.home .document .category-startup-tools .category-name {
-    border-bottom: 3px solid #90cc3a;
-  }
-  body.home .document .category-startup-tools .category-name,
-  body.home .document .category-startup-tools .category-name a {
-    color: #90cc3a;
-  }
-  body.home .document .category-weiji .category-name {
-    border-bottom: 3px solid #d13351;
-  }
-  body.home .document .category-weiji .category-name,
-  body.home .document .category-weiji .category-name a {
-    color: #d13351;
   }
 }
 .content-info {

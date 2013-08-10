@@ -21,6 +21,70 @@ body.home {
     }
   }
 
+  // Article icon styling
+  .hentry {
+    padding-left: 29px;
+  }
+  .hentry .entry-icon {
+    display: inline-block;
+    margin-left: -29px;
+    margin-right: 4px;
+    width: 20px;
+  }
+
+  // Article header styling
+  .category-name {
+    // Align with site title
+    margin-top: 11px;
+    line-height: 35px;
+  }
+  .category-description {
+    color: @concrete;
+    border-bottom: 1px solid @clouds;
+
+    margin-bottom: (2 * @base-font-size * @base-line-height);
+  }
+
+  // Colors for special categories
+  .category-open-design {
+    .category-name {
+      border-bottom: 3px solid @open-design;
+    }
+    .category-name, .category-name a {
+      color: @open-design;
+    }
+  }
+  .category-startup-tools {
+    .category-name {
+      border-bottom: 3px solid @startup-tools;
+    }
+    .category-name, .category-name a {
+      color: @startup-tools;
+    }
+  }
+  .category-weiji {
+    .category-name {
+      border-bottom: 3px solid @weiji;
+    }
+    .category-name, .category-name a {
+      color: @weiji;
+    }
+  }
+
+  // More-links
+  .more {
+    padding-left: 29px;
+  }
+  .category-open-design .more a {
+    color: @open-design;
+  }
+  .category-startup-tools .more a {
+    color: @startup-tools;
+  }
+  .category-weiji .more a {
+    color: @weiji;
+  }
+
   // Extra wide document container
   @media (min-width: @tabletBreakpoint) {
     .document {
@@ -38,69 +102,6 @@ body.home {
         .column(6, 18);
       }
 
-      // Article icon styling
-      .hentry {
-        padding-left: 29px;
-      }
-      .hentry .entry-icon {
-        display: inline-block;
-        margin-left: -29px;
-        margin-right: 4px;
-        width: 20px;
-      }
-
-      // More-links
-      .more {
-        padding-left: 29px;
-      }
-      .category-open-design .more a {
-        color: @open-design;
-      }
-      .category-startup-tools .more a {
-        color: @startup-tools;
-      }
-      .category-weiji .more a {
-        color: @weiji;
-      }
-
-      // Article header styling
-      .category-name {
-        // Align with site title
-        margin-top: 11px;
-        line-height: 35px;
-      }
-      .category-description {
-        color: @concrete;
-        border-bottom: 1px solid @clouds;
-
-        margin-bottom: (2 * @base-font-size * @base-line-height);
-      }
-
-      // Colors for special categories
-      .category-open-design {
-        .category-name {
-          border-bottom: 3px solid @open-design;
-        }
-        .category-name, .category-name a {
-          color: @open-design;
-        }
-      }
-      .category-startup-tools {
-        .category-name {
-          border-bottom: 3px solid @startup-tools;
-        }
-        .category-name, .category-name a {
-          color: @startup-tools;
-        }
-      }
-      .category-weiji {
-        .category-name {
-          border-bottom: 3px solid @weiji;
-        }
-        .category-name, .category-name a {
-          color: @weiji;
-        }
-      }
     }
   }
 }
