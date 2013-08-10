@@ -7929,6 +7929,9 @@ body.category-startup-tools .document .page-header a:focus {
     top: 13px;
   }
 }
+.document .hentry .entry-content a {
+  font-weight: bold;
+}
 .document .hentry .entry-icon {
   color: #95a5a6;
   text-decoration: none;
