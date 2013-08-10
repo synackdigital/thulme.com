@@ -8125,11 +8125,10 @@ body.archive .document .hentry header h2 {
   height: 40px;
 }
 .content-info .widget_twitter a {
-  color: white;
+  color: #fcfffc;
 }
-.content-info .widget_twitter a:hover,
-.content-info .widget_twitter a:focus {
-  text-decoration: underline;
+.content-info .widget_twitter .looper a {
+  color: #00bdef;
 }
 #comments {
   border-top: 1px solid #bdc3c7;
