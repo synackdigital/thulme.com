@@ -8227,6 +8227,10 @@ body.archive .document .hentry header h2 {
 body {
   background-color: #fcfffc;
 }
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
 a:hover,
 a:focus {
   text-decoration: underline;
