@@ -8340,7 +8340,7 @@ a:focus {
   display: none;
 }
 .banner #searchform .search-query {
-  width: 12em;
+  width: 11em;
   -webkit-transition: width 90ms ease-in-out, border-color 90ms linear;
   -moz-transition: width 90ms ease-in-out, border-color 90ms linear;
   -o-transition: width 90ms ease-in-out, border-color 90ms linear;
@@ -8348,7 +8348,7 @@ a:focus {
   -webkit-backface-visibility: hidden;
 }
 .banner #searchform .search-query:focus {
-  width: 16em;
+  width: 13em;
 }
 .banner #searchform .search-query:hover {
   border-color: #1abc9c;
