@@ -6,5 +6,6 @@ node_modules/
 .ftppass
 
 # Wordpress
+wordpress/.htaccess
 wordpress/wp-config.php
 wordpress/media
