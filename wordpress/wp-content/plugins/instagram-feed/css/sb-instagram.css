@@ -1,0 +1,101 @@
+/**************/
+/*** LAYOUT ***/
+/**************/
+
+/* Feed container */
+#sb_instagram {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#sb_instagram:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*********************/
+/*** STYLE OPTIONS ***/
+/*********************/
+#sb_instagram.sbi_fixed_height{
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#sb_instagram #sbi_images{
+  width: 100%;
+  float: left;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#sb_instagram #sbi_images a{
+  float: left;
+  padding: inherit !important;
+  margin: 0 !important;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#sb_instagram img{
+  float: left;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Cols */
+#sb_instagram.sbi_col_1 #sbi_images a{ width: 100%; }
+#sb_instagram.sbi_col_2 #sbi_images a{ width: 50%; }
+#sb_instagram.sbi_col_3 #sbi_images a{ width: 33.33%; }
+#sb_instagram.sbi_col_4 #sbi_images a{ width: 25%; }
+#sb_instagram.sbi_col_5 #sbi_images a{ width: 20%; }
+#sb_instagram.sbi_col_6 #sbi_images a{ width: 16.66%; }
+#sb_instagram.sbi_col_7 #sbi_images a{ width: 14.28%; }
+#sb_instagram.sbi_col_8 #sbi_images a{ width: 12.5%; }
+#sb_instagram.sbi_col_9 #sbi_images a{ width: 11.11%; }
+#sb_instagram.sbi_col_10 #sbi_images a{ width: 10%; }
+
+/* Button */
+#sb_instagram #sbi_load{
+  display: none;
+  float: left;
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+#sb_instagram #sbi_load a{
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+
+  padding: 4px 14px;
+  margin: 0 auto;
+  background: #333;
+  color: #eee;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#sb_instagram #sbi_load a:hover{
+  background: #666;
+}
