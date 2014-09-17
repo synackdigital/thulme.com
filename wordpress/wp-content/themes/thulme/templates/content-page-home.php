@@ -6,7 +6,7 @@
 
 <div class="grid-container">
   <?php // Open Design posts
-    query_posts('category_name=open-design&posts_per_page=7');
+    query_posts('category_name=open-design&posts_per_page=4');
     if (have_posts()) : ?>
   <section class="category category-open-design">
     <h2 class="category-name"><a href="<?php echo get_category_link( $category_open_design->term_id ); ?>" title="Show all posts in <?php echo $category_open_design->name; ?>"><?php echo $category_open_design->name; ?></a></h2>
@@ -32,7 +32,7 @@
   <?php endif; ?>
 
   <?php // Startup Tools posts
-    query_posts('category_name=startup-tools&posts_per_page=7');
+    query_posts('category_name=startup-tools&posts_per_page=4');
     if (have_posts()) : ?>
   <section class="category category-startup-tools">
     <h2 class="category-name"><a href="<?php echo get_category_link( $category_startup_tools->term_id ); ?>" title="Show all posts in <?php echo $category_startup_tools->name; ?>"><?php echo $category_startup_tools->name; ?></a></h2>
@@ -56,7 +56,7 @@
   <?php endif; ?>
 
   <?php // Weiji posts
-    query_posts('category_name=weiji&posts_per_page=7');
+    query_posts('category_name=weiji&posts_per_page=4');
     if (have_posts()) : ?>
   <section class="category category-weiji">
     <h2 class="category-name"><a href="<?php echo get_category_link( $category_weiji->term_id ); ?>" title="Show all posts in <?php echo $category_weiji->name; ?>"><?php echo $category_weiji->name; ?></a></h2>
