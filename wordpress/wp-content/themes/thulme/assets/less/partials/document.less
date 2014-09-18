@@ -36,6 +36,19 @@
 
   // Colored page headers on special categories
   .page-header {
+    // Investing
+    body.category-investing & {
+      color: @investing;
+
+      a {
+        color: @investing;
+
+        &:hover,
+        &:focus {
+          color: darken(@investing, 15%);
+        }
+      }
+    }
     // Weiji
     body.category-weiji & {
       color: @weiji;
@@ -106,14 +119,15 @@
         font-size: @h2;
       }
 
+      .category-investing & {
+        color: @investing;
+      }
       .category-open-design & {
         color: @open-design;
       }
-
       .category-startup-tools & {
         color: @startup-tools;
       }
-
       .category-weiji & {
         color: @weiji;
       }

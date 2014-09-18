@@ -5,6 +5,7 @@
 body.home {
 
   // Three-col grid
+  .category-investing,
   .category-open-design,
   .category-startup-tools,
   .category-weiji {
@@ -48,6 +49,14 @@ body.home {
   }
 
   // Colors for special categories
+  .category-investing {
+    .category-name {
+      border-bottom: 3px solid @investing;
+    }
+    .category-name, .category-name a {
+      color: @investing;
+    }
+  }
   .category-open-design {
     .category-name {
       border-bottom: 3px solid @open-design;
@@ -77,6 +86,9 @@ body.home {
   .more {
     padding-left: 29px;
   }
+  .category-investing .more a {
+    color: @investing;
+  }
   .category-open-design .more a {
     color: @open-design;
   }
@@ -98,10 +110,11 @@ body.home {
       }
 
       // Three-col grid
+      .category-investing,
       .category-open-design,
       .category-startup-tools,
       .category-weiji {
-        .column(6, 18);
+        .column(9, 18);
       }
 
     }
