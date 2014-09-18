@@ -50,8 +50,11 @@ module.exports = function(grunt) {
 
     // File watcher
     watch: {
-      files: ['wordpress/wp-content/themes/thulme/assets/less/**/*.less'],
-      tasks: ['less:compile'],
+      files: [
+        'wordpress/wp-content/themes/thulme/assets/less/**/*.less',
+        'wordpress/wp-content/themes/thulme/assets/js/**/*.js'
+      ],
+      tasks: ['default'],
       options: {
         nospawn: true
       }
@@ -65,6 +68,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Task aliases
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['less', 'uglify']);
 
 };
