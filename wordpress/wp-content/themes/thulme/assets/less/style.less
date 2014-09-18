@@ -88,35 +88,47 @@ a:focus {
     position: relative;
     &:after {
       background: -webkit-gradient(linear, left, right,
-        color-stop(0%, @thulme), color-stop(25%, @thulme),
-        color-stop(25%, @open-design), color-stop(50%, @open-design),
-        color-stop(50%, @startup-tools), color-stop(75%, @startup-tools),
-        color-stop(75%, @weiji), color-stop(100%, @weiji));
+        color-stop(0%, @investing), color-stop(20%, @investing),
+        color-stop(20%, @open-design), color-stop(40%, @open-design),
+        color-stop(40%, @startup-tools), color-stop(60%, @startup-tools),
+        color-stop(60%, @weiji), color-stop(100%, @weiji),
+        color-stop(80%, @thulme), color-stop(100%, @thulme)
+      );
       background: -webkit-linear-gradient(left,
-        @thulme 0%, @thulme 25%,
-        @open-design 25%, @open-design 50%,
-        @startup-tools 50%, @startup-tools 75%,
-        @weiji 75%, @weiji 100%);
+        @investing 0%, @investing 20%,
+        @open-design 20%, @open-design 40%,
+        @startup-tools 40%, @startup-tools 60%,
+        @weiji 60%, @weiji 80%,
+        @thulme 80%, @thulme 100%
+      );
       background: -moz-linear-gradient(left,
-        @thulme 0%, @thulme 25%,
-        @open-design 25%, @open-design 50%,
-        @startup-tools 50%, @startup-tools 75%,
-        @weiji 75%, @weiji 100%);
+        @investing 0%, @investing 20%,
+        @open-design 20%, @open-design 40%,
+        @startup-tools 40%, @startup-tools 60%,
+        @weiji 60%, @weiji 80%,
+        @thulme 80%, @thulme 100%
+      );
       background: -ms-linear-gradient(left,
-        @thulme 0%, @thulme 25%,
-        @open-design 25%, @open-design 50%,
-        @startup-tools 50%, @startup-tools 75%,
-        @weiji 75%, @weiji 100%);
+        @investing 0%, @investing 20%,
+        @open-design 20%, @open-design 40%,
+        @startup-tools 40%, @startup-tools 60%,
+        @weiji 60%, @weiji 80%,
+        @thulme 80%, @thulme 100%
+      );
       background: -o-linear-gradient(left,
-        @thulme 0%, @thulme 25%,
-        @open-design 25%, @open-design 50%,
-        @startup-tools 50%, @startup-tools 75%,
-        @weiji 75%, @weiji 100%);
+        @investing 0%, @investing 20%,
+        @open-design 20%, @open-design 40%,
+        @startup-tools 40%, @startup-tools 60%,
+        @weiji 60%, @weiji 80%,
+        @thulme 80%, @thulme 100%
+      );
       background: linear-gradient(to right,
-        @thulme 0%, @thulme 25%,
-        @open-design 25%, @open-design 50%,
-        @startup-tools 50%, @startup-tools 75%,
-        @weiji 75%, @weiji 100%);
+        @investing 0%, @investing 20%,
+        @open-design 20%, @open-design 40%,
+        @startup-tools 40%, @startup-tools 60%,
+        @weiji 60%, @weiji 80%,
+        @thulme 80%, @thulme 100%
+      );
 
       content: ' ';
       .hide-text();
@@ -270,6 +282,12 @@ a:focus {
   & > li {
     &:after {
       background-color: @deep-sea;
+    }
+  }
+  // Investing
+  & > li[class*='investing'] {
+    &:after {
+      background-color: @investing;
     }
   }
   // About (thulme)

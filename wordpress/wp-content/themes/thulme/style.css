@@ -8267,12 +8267,12 @@ a:focus {
 
 }
 .banner .brand:after {
-  background: -webkit-gradient(linear, left, right, color-stop(0%, #40e2e1), color-stop(25%, #40e2e1), color-stop(25%, #ebc434), color-stop(50%, #ebc434), color-stop(50%, #90cc3a), color-stop(75%, #90cc3a), color-stop(75%, #d13351), color-stop(100%, #d13351));
-  background: -webkit-linear-gradient(left, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
-  background: -moz-linear-gradient(left, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
-  background: -ms-linear-gradient(left, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
-  background: -o-linear-gradient(left, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
-  background: linear-gradient(to right, #40e2e1 0%, #40e2e1 25%, #ebc434 25%, #ebc434 50%, #90cc3a 50%, #90cc3a 75%, #d13351 75%, #d13351 100%);
+  background: -webkit-gradient(linear, left, right, color-stop(0%, #40e2e1), color-stop(20%, #40e2e1), color-stop(20%, #ebc434), color-stop(40%, #ebc434), color-stop(40%, #90cc3a), color-stop(60%, #90cc3a), color-stop(60%, #d13351), color-stop(100%, #d13351), color-stop(80%, #102753), color-stop(100%, #102753));
+  background: -webkit-linear-gradient(left, #40e2e1 0%, #40e2e1 20%, #ebc434 20%, #ebc434 40%, #90cc3a 40%, #90cc3a 60%, #d13351 60%, #d13351 80%, #102753 80%, #102753 100%);
+  background: -moz-linear-gradient(left, #40e2e1 0%, #40e2e1 20%, #ebc434 20%, #ebc434 40%, #90cc3a 40%, #90cc3a 60%, #d13351 60%, #d13351 80%, #102753 80%, #102753 100%);
+  background: -ms-linear-gradient(left, #40e2e1 0%, #40e2e1 20%, #ebc434 20%, #ebc434 40%, #90cc3a 40%, #90cc3a 60%, #d13351 60%, #d13351 80%, #102753 80%, #102753 100%);
+  background: -o-linear-gradient(left, #40e2e1 0%, #40e2e1 20%, #ebc434 20%, #ebc434 40%, #90cc3a 40%, #90cc3a 60%, #d13351 60%, #d13351 80%, #102753 80%, #102753 100%);
+  background: linear-gradient(to right, #40e2e1 0%, #40e2e1 20%, #ebc434 20%, #ebc434 40%, #90cc3a 40%, #90cc3a 60%, #d13351 60%, #d13351 80%, #102753 80%, #102753 100%);
   content: ' ';
   font: 0/0 a;
   color: transparent;
@@ -8437,8 +8437,11 @@ a:focus {
 .nav-list > li:after {
   background-color: #32373c;
 }
-.nav-list > li[class*='about']:after {
+.nav-list > li[class*='investing']:after {
   background-color: #40e2e1;
+}
+.nav-list > li[class*='about']:after {
+  background-color: #102753;
 }
 .nav-list > li[class*='weiji']:after {
   background-color: #d13351;
