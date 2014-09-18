@@ -1,6 +1,6 @@
 $(function(){
 
-  // Mobile nav behaviour on home page
+  // Mobile nav behaviour
   if ( $('#nav-toggle').css('display') != 'none' ) {
 
     // Nav toggle button
@@ -8,7 +8,7 @@ $(function(){
       $('.navigation', '.banner').slideToggle('quick');
     });
 
-    // Section nav
+    // Section nav on home
     $('section.category', 'body.home').each( function( index ) {
       $entries = $('ul', $(this));
       $entries.hide();
@@ -18,6 +18,13 @@ $(function(){
         $('ul', $(this)).slideToggle('quick');
       }, this ));
     })
+  }
+  // Non-mobile nav behaviour
+  else {
+    // Does banner fit in window?
+    if ( $('.banner-container', '.banner').outerHeight() < $(window).height() ) {
+      $('.banner-container', '.banner').css('position', 'fixed');
+    }
   }
 
   // Loop Twitter feed
