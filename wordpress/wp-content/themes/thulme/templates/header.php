@@ -2,7 +2,7 @@
   <div class="brand">
     <a class="title" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
   </div>
-  <button id="nav-toggle" class="btn"><span class="fui-list"></span></button>
+  <button id="nav-toggle" class="btn"><span class="fui-search"></span></button>
   <div class="navigation">
     <nav class="nav nav-primary" role="navigation">
       <?php
