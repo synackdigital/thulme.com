@@ -6,7 +6,7 @@
     <?php the_widget(
       'WP_Widget_Twitter_Pro',
       array(
-        'title' => '<span class="icon-twitter" aria-hidden="true"></span> <a href="https://twitter.com/thulme">thulme tweets</a>'
+        'title' => '<span class="icon-twitter" aria-hidden="true"></span> <a href="https://twitter.com/thulme">@thulme</a>'
       )
     ); ?>
   </section>
