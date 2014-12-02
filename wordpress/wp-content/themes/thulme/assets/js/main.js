@@ -22,7 +22,7 @@ $(function(){
   // Non-mobile nav behaviour
   else {
     // Does banner fit in window?
-    if ( $('.banner-container', '.banner').outerHeight() < $(window).height() ) {
+    if ( $('.banner-container', '.banner').outerHeight() < $(window).height() && $(window).height() > 520 ) {
       // Fix banner
       $('.banner-container', '.banner').css('position', 'fixed');
       $('.document').css('min-height', $('.banner-container', '.banner').outerHeight());
