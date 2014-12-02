@@ -23,7 +23,9 @@ $(function(){
   else {
     // Does banner fit in window?
     if ( $('.banner-container', '.banner').outerHeight() < $(window).height() ) {
+      // Fix banner
       $('.banner-container', '.banner').css('position', 'fixed');
+      $('.document').css('min-height', $('.banner-container', '.banner').outerHeight());
     }
   }
 
