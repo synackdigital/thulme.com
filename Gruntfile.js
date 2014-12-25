@@ -16,6 +16,7 @@ module.exports = function(grunt) {
       },
       build: {
         src: [
+          js_src+'/vendor/jquery-1.8.3.min.js',
           js_src+'/vendor/jquery-ui-1.10.3.custom.min.js',
           js_src+'/vendor/jquery.ui.touch-punch.min.js',
           js_src+'/vendor/bootstrap-select.js',
