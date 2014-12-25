@@ -8,7 +8,7 @@
 <div class="grid-container clearfix">
 
   <?php // Investing posts
-    query_posts('category_name=investing&posts_per_page=2');
+    query_posts('category_name=investing&posts_per_page=4');
     if (have_posts()) : ?>
   <section class="category category-investing">
     <h2 class="category-name"><a href="<?php echo get_category_link( $category_investing->term_id ); ?>" title="Show all posts in <?php echo $category_investing->name; ?>"><?php echo $category_investing->name; ?></a></h2>
