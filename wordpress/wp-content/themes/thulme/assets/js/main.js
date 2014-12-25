@@ -21,8 +21,11 @@ $(function(){
   }
   // Non-mobile nav behaviour
   else {
+    console.log('1');
     // Does banner fit in window?
-    if ( $('.banner-container', '.banner').outerHeight() < $(window).height() && $(window).height() > 520 ) {
+    if (
+      $('.banner-container', '.banner').outerHeight() < $(window).height()
+      && $(window).height() > $('.banner-container', '.banner').outerHeight() + 220 ) {
       // Fix banner
       $('.banner-container', '.banner').css('position', 'fixed');
       $('.document').css('min-height', $('.banner-container', '.banner').outerHeight());
@@ -35,4 +38,3 @@ $(function(){
   $('.widget_twitter .looper').looper('to', 1);
   $('.content-info .widget_twitter').show();
 });
-
